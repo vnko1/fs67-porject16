@@ -15,9 +15,9 @@ body {
   padding-right: 16px;
   @extend %centred;
 
-  // @include contentMedia ($mobile) {
-
-  // }
+  @include contentMedia($mobile) {
+    width: $mobile;
+  }
 
   @include contentMedia($tablet) {
     width: $tablet;
