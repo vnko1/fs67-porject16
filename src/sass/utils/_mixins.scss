@@ -1,0 +1,35 @@
+@mixin animation($type) {
+  transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin media($width) {
+  @media screen and (min-width: $width) {
+    min-width: $width;
+  }
+}
+
+@mixin contentMedia($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin mwContentMedia($width) {
+  @media screen and (max-width: $width - 1px) {
+    @content;
+  }
+}
+
+@mixin retina($name, $width, $type) {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/#{$name}-#{$width}@2x.#{$type});
+    @content;
+  }
+}
+
+@mixin calc($gap, $quantity) {
+  width: calc((100% - ($gap * ($quantity - 1))) / $quantity);
+}
