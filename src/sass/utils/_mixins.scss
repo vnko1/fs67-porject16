@@ -14,11 +14,11 @@
   }
 }
 
-@mixin mwContentMedia($width) {
-  @media screen and (max-width: $width - 1px) {
-    @content;
-  }
-}
+// @mixin mwContentMedia($width) {
+//   @media screen and (max-width: $width - 1px) {
+//     @content;
+//   }
+// }
 
 @mixin retina($name, $width, $type) {
   @media (min-device-pixel-ratio: 2),
