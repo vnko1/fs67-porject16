@@ -4,7 +4,7 @@
 
 @mixin media($width) {
   @media screen and (min-width: $width) {
-    min-width: $width;
+    width: $width;
   }
 }
 
