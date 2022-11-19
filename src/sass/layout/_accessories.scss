@@ -14,11 +14,6 @@
         background-image: url(/src/images/accesories/back-access-mobile_2x.jpg);
     }
 
-
-    height: 4096px;
-
-
-
     &__filter {
         display: flex;
         gap: 24px;
@@ -51,9 +46,17 @@
         margin-bottom: 27px;
     }
 
-    // &__list {}
+    &__list {
+        margin-bottom: 24px;
+    }
 
-    // &__article {}
+    &__article:nth-child(-n + 5) {
+        margin-bottom: 16px;
+    }
+
+    &__article:nth-child(n + 7) {
+        display: none;
+    }
 }
 
 // .container {}
@@ -90,15 +93,8 @@
         font-weight: 600;
         font-size: 22px;
         line-height: 1.18;
-
         color: #86E543;
         margin-bottom: 8px;
-    }
-
-    .article__wrap-text {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     &__text-one {
@@ -114,6 +110,12 @@
         line-height: 1;
         color: #86E543;
     }
+}
+
+.article__wrap-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container-ass {
@@ -142,5 +144,28 @@
         font-size: 14px;
         line-height: 1.14;
         color: $main-font-color;
+    }
+}
+
+
+.markers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    // &__item {}
+
+    &__point {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+    }
+
+    &__point--oval {
+        width: 40px;
+        border-radius: 30px;
     }
 }
