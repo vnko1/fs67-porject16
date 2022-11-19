@@ -14,18 +14,18 @@
   }
 }
 
-// @mixin mwContentMedia($width) {
-//   @media screen and (max-width: $width - 1px) {
-//     @content;
-//   }
-// }
+@mixin mwContentMedia($width) {
+  @media screen and (max-width: ($width - 1px)) {
+    @content;
+  }
+}
 
-@mixin retina($name, $width, $type) {
+@mixin retina($folder, $name, $width, $type) {
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/#{$name}-#{$width}@2x.#{$type});
+    background-image: url(../images/#{$folder}/#{$name}-#{$width}@2x.#{$type});
     @content;
   }
 }
