@@ -5,12 +5,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    // background-image: image-set(url(/src/images/accesories/back-access-mobile.jpg) 1x,
-    //         url(/src/images/accesories/back-access-mobile_2x.jpg) 2x,
-    //     );
 
     background-image: url(/src/images/accesories/back-access-mobile.jpg);
-
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -20,6 +16,8 @@
 
 
     height: 4096px;
+
+
 
     &__filter {
         display: flex;
@@ -62,25 +60,66 @@
 
 .article {
 
-    // &__link {}
+    &__link {
+        &:hover .shutter {
+            transform: translateY(0);
+        }
+
+        &:hover .article__wrap {
+            box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+        }
+    }
 
     &__wrap {
         position: relative;
         overflow: hidden;
-    }
-
-    &__image {
         border: 1px solid #86E543;
         border-radius: 12px;
+
+
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    // &__footer {}
+    // &__image {}
 
-    // &__title {}
+    &__footer {
+        padding: 8px 16px 8px 8px;
+    }
 
-    // &__text-one {}
+    &__title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.18;
 
-    // &__text-two {}
+        color: #86E543;
+        margin-bottom: 8px;
+    }
+
+    .article__wrap-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text-one {
+        font-size: 14px;
+        line-height: 1;
+        text-decoration: line-through;
+        color: #8D9289;
+    }
+
+    &__text-two {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1;
+        color: #86E543;
+    }
+}
+
+.container-ass {
+    outline: 1px solid tomato;
+    padding-left: 18px;
+    padding-right: 17px;
 }
 
 .shutter {
@@ -96,6 +135,7 @@
     padding: 16px;
     background-color: $main-bg-color;
     transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &__text {
         font-weight: 400;
