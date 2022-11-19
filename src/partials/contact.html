@@ -1,8 +1,12 @@
 <section class="contacts">
   <div class="container">
     <h1 class="contacts_title">Contacts</h1>
+    <!-- <svg class="icon">
+      <use href="./images/contact/sprite.svg#line"></use>
+    </svg> -->
+
     <div class="img-wrap">
-      <picture class="contacts_img">
+      <!-- <picture class="contacts_img">
         <source
           srcset="
             ./images/contact/contacts-desktop.jpg    1x,
@@ -29,7 +33,7 @@
           alt="Геймерські ґаджети"
           width="1200"
         />
-      </picture>
+      </picture> -->
     </div>
     <p class="contacts-text">
       In case of queries about order handling and/or delay, drop us an email at
@@ -60,12 +64,29 @@
       <h2 class="form-title">Contact us</h2>
       <form>
         <div class="input-wrap">
+          <input
+            type="text"
+            name=""
+            class="contact-input"
+            id="user-name"
+            placeholder=" "
+            pattern="[A-Za-z]{3,}"
+            title="The login can not be less than 3 characters and can include only Latin letters"
+            required
+          />
           <label for="user-name" class="input-label">Name</label>
-          <input type="text" name="" class="contact-input" id="user-name" />
         </div>
 
         <div class="input-wrap">
-          <input type="text" name="" class="contact-input" id="user-mail" />
+          <input
+            type="email"
+            name=""
+            class="contact-input"
+            id="user-mail"
+            placeholder=" "
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
           <label for="user-mail" class="input-label">Email</label>
         </div>
 
