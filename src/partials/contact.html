@@ -1,71 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="./contacts.css" /> -->
-  </head>
-  <body>
-    <section>
-      <h1>Contacts</h1>
-      <picture>
-        <!-- <source
+<section class="contacts">
+  <div class="container">
+    <h1 class="contacts_title">Contacts</h1>
+    <div class="img-wrap">
+      <picture class="contacts_img">
+        <source
           srcset="
-            ./contacts-desktop.jpg           1x,
-            ./images/contacts-desktop_2x.jpg 2x
+            ./images/contact/contacts-desktop.jpg    1x,
+            ./images/contact/contacts-desktop_2x.jpg 2x
           "
           media="(min-width: 1200px)"
         />
         <source
-          srcset="./contacts-tab.jpg 1x, ./contacts-tab_2x.jpg 2x"
+          srcset="
+            ./images/contact/contacts-tab.jpg    1x,
+            ./images/contact/contacts-tab_2x.jpg 2x
+          "
           media="(min-width: 768px)"
         />
         <source
-          srcset="./contacts-mob.jpg 1x, ./contacts-mob_2x.jpg 2x"
+          srcset="
+            ./images/contact/contacts-mob.jpg    1x,
+            ./images/contact/contacts-mob_2x.jpg 2x
+          "
           media="(max-width: 767px)"
         />
         <img
-          src="./contacts-desktop.jpg"
+          src="./images/contact/contacts-desktop.jpg"
           alt="Геймерські ґаджети"
-          width="450"
-        /> -->
+          width="1200"
+        />
       </picture>
-      <p class="contacts-text">
-        In case of queries about order handling and/or delay, drop us an email
-        at
-        <a class="link" href="mailto:info@shopforgamers.com"
-          >info@shopforgamers.com
-        </a>
-      </p>
-      <ul>
-        <li>
-          <h3>Email</h3>
-          <a class="link" href="mailto:sfg.info@gmail.com"
-            >sfg.info@gmail.com</a
-          >
-        </li>
-        <li>
-          <h3>Phone number</h3>
-          <a class="link" href="tel:+380936432288">+38 (093) 643 22 88</a>
-          <a class="link" href="tel:+380503454423">+38 (050) 345 44 23</a>
-        </li>
-      </ul>
+    </div>
+    <p class="contacts-text">
+      In case of queries about order handling and/or delay, drop us an email at
+      <br /><br />
+      <a class="contact-link" href="mailto:info@shopforgamers.com"
+        >info@shopforgamers.com
+      </a>
+    </p>
+    <ul class="contact-list">
+      <li class="contact-list__item">
+        <h3 class="contact-list__title">Email</h3>
+        <a class="contact-link" href="mailto:sfg.info@gmail.com"
+          >sfg.info@gmail.com</a
+        >
+      </li>
+      <li class="contact-list__item">
+        <h3 class="contact-list__title">Phone number</h3>
+        <a class="contact-link tel" href="tel:+380936432288"
+          >+38 (093) 643 22 88</a
+        >
+        <a class="contact-link tel" href="tel:+380503454423"
+          >+38 (050) 345 44 23</a
+        >
+      </li>
+    </ul>
 
-      <h2>Contact us</h2>
-      <form action="">
-        <label for="user-name" class="">Name</label>
-        <input type="text" name="" class="" id="user-name" />
+    <div class="form-wrap">
+      <h2 class="form-title">Contact us</h2>
+      <form>
+        <div class="input-wrap">
+          <label for="user-name" class="input-label">Name</label>
+          <input type="text" name="" class="contact-input" id="user-name" />
+        </div>
 
-        <label for="user-mail" class="">Email</label>
-        <input type="text" name="" class="" id="user-mail" />
+        <div class="input-wrap">
+          <input type="text" name="" class="contact-input" id="user-mail" />
+          <label for="user-mail" class="input-label">Email</label>
+        </div>
 
-        <label for="user-text" class="">Leave your message</label>
-        <textarea name="user-text" id="user-text" class=""></textarea>
+        <label for="user-text" class="comments-label">Leave your message</label>
+        <textarea
+          name="user-text"
+          id="user-text"
+          class="contact-comments"
+        ></textarea>
 
-        <button type="submit" class="">Send</button>
+        <button type="submit" class="form-btn">Send</button>
       </form>
-    </section>
-  </body>
-</html>
+    </div>
+  </div>
+</section>
