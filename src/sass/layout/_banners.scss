@@ -1,0 +1,81 @@
+.section-banners {
+    padding-bottom: 48px;
+    @include contentMedia($tablet) {
+    padding: 120px 0px;
+    }
+
+    @include contentMedia($desktop) {
+        z-index: 1;
+        background-image: url(../images/main/background-desk-1x.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/main/background-desk-2x.jpg);
+        }
+    }
+}
+
+.banners-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: start;
+    white-space: pre-line;
+    position: absolute;
+    bottom: 24px;
+    left: 37px;
+    @include contentMedia($tablet) {
+        bottom: 14px;
+        left: 41px;
+        font-size: 56px;
+        line-height: 1.18;
+    }
+    @include contentMedia($desktop) {
+        bottom: 49px;
+        left: 345px;
+    }
+    background: linear-gradient(270deg,
+        #1edde0 13.26%,
+        #8bda41 51.01%,
+        #ef001b 107.89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    //   text-fill-color: transparent;
+    color: transparent;
+}
+
+.ellipse {
+    @extend %flex-centred;
+    gap: 16px;
+}
+
+.ellipse-current {
+    width: 40px;
+    height: 16px;
+
+    background: #ffffff;
+    border-radius: 30px;
+}
+
+.ellipse-next {
+    width: 16px;
+    height: 16px;
+
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.container-banners {
+    width: 100vw;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.banner-img {
+    width: 100vw;
+}
