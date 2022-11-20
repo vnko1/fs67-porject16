@@ -13,13 +13,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   @include mwContentMedia($tablet) {
-    background-image: url(../images/main/main-bg-mobile.jpg);
-    @include retina(main, main-bg, mobile, jpg);
+    background-image: url(../images/common/main-bg-mobile.jpg);
+    @include retina(common, main-bg, mobile, jpg);
   }
 
   @include andContentMedia($tablet, $desktop) {
-    background-image: url(../images/main/main-bg-tablet.jpg);
-    @include retina(main, main-bg, tablet, jpg);
+    background-image: url(../images/common/main-bg-tablet.jpg);
+    @include retina(common, main-bg, tablet, jpg);
+  }
+
+  @include contentMedia ($desktop) {
+     background-image: url(../images/common/main-bg-desktop.jpg);
+    @include retina(common, main-bg, tablet, jpg);
   }
 }
 
