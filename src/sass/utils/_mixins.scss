@@ -20,6 +20,12 @@
   }
 }
 
+@mixin andContentMedia($minWidth, $maxWidth) {
+  @media screen and (min-width: $minWidth) and (max-width: ($maxWidth - 1px)) {
+    @content;
+  }
+}
+
 @mixin retina($folder, $name, $width, $type) {
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
