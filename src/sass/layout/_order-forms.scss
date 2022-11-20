@@ -1,52 +1,3 @@
-// body {
-//     font-family: "Roboto", sans-serif;
-//     letter-spacing: 0.03em;
-//     color: #ffffff;
-//     background-color: #01383A;
-// }
-
-
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// p {
-//     margin: 0;
-// }
-
-// ul {
-//     padding: 0;
-//     margin: 0;
-//     list-style: none;
-// }
-
-// .container {
-//     max-width: 480px;
-//     padding-left: 16px;
-//     padding-right: 16px;
-//     margin-left: auto;
-//     margin-right: auto;
-
-//     @media screen and (min-width:480px) {
-//         max-width: 320px;
-//         padding-left: 16px;
-//         padding-right: 16px;
-//     }
-
-//     @media screen and (min-width:768px) {
-//         max-width: 768px;
-//         padding-left: 40px;
-//         padding-right: 40px;
-//     }
-
-//     @media screen and (min-width:1280px) {
-//         max-width: 1280px;
-//     }
-// }
-
 .title-wrap {
     @media screen and (min-width:768px) and (max-width:1279px) {
     max-width: 589px;
@@ -105,9 +56,8 @@
     border-bottom: 1px solid #86E543;
     outline: transparent;
     color: #f7f7f7;
-}
 
-.order-form__input::placeholder {
+    &::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -120,12 +70,13 @@
     }
 }
 
-.order-form__input:valid {
-    border-bottom: 1px solid #86E543;
-}
+    &:valid {
+        border-bottom: 1px solid #86E543;
+    }
 
-.order-form__input:invalid {
-    border-bottom: 1px solid #FF705D;
+    &:invalid {
+        border-bottom: 1px solid #FF705D;
+    }
 }
 
 // Select
@@ -133,20 +84,20 @@
 .select-wrap {
     position: relative;
 
+    display: flex;
+    
+    border-bottom: 1px solid #86E543;;
+
     margin-bottom: 40px;
     @media screen and (min-width:1280px) {
         margin-bottom: 0;
     }
-    
-    display: flex;
-    
-    border-bottom: 1px solid #86E543;;
-}
 
-.select-wrap:not(:last-child) {
+    &:not(:last-child) {
     @media screen and (min-width:1280px) {
         margin-bottom: 40px;
     }
+}
 }
 
 .order-form__label {
@@ -186,10 +137,10 @@
     font-size: 18px;
     line-height: 1.11;
     }
-}
 
-.select:focus {
+    &:focus {
     background-color: #17573D;
+}
 }
 
 .select:invalid + .border-bottom::before {
@@ -215,10 +166,10 @@
     border-width: 8px 6px 0 6px;
     border-color: #ffffff transparent transparent transparent;
     pointer-events: none;
-}
 
-.select:focus ~ .arrow::after {
+    .select:focus + & {
     transform: rotate(-180deg);
+}
 }
 
 .form-area {
