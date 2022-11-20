@@ -10,3 +10,56 @@
   clip-path: inset(50%);
   margin: -1px;
 }
+.hidden-blog {
+  width: 114px;
+  height: 66px;
+  font-style: semibold;
+  font-size: 56px;
+  line-height: 100%;
+  
+  color: #ffff;
+  margin-left: 142px;
+  margin-bottom: 75px;
+  margin-top: 120px;
+}
+.blog-section {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.img-blog {
+float:left;
+margin-right: 121px;
+margin-left: 40px;
+}
+.text-1 {
+  font-size: 56px;
+  line-height: 56px;
+  
+  margin-bottom: 52px;
+}
+.text-2 {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.text-3 {
+  float: left;
+  
+  height: 24px;
+  font-size: 24px;
+  fill: #ffff;
+}
+.text-4 {
+  float:right;
+  text-align: right;
+  color: #8D9289;
+  font-size: 24px;
+}
+.text-5 {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+.text-6 {
+  text-align: right;
+  font-size: 24px;
+  color: #86E543;
+}
