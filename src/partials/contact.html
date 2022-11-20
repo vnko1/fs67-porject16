@@ -1,0 +1,116 @@
+<!-- Фон
+     Декоративна лінія -->
+
+<section class="contacts">
+  <div class="container">
+    <h1 class="contacts_title">Contacts</h1>
+  </div>
+
+  <!-- PICTURE -->
+
+  <div class="img-wrap container">
+    <picture class="contacts_img">
+      <source
+        srcset="
+          ./images/contact/contact-desktop.png    1x,
+          ./images/contact/contact-desktop_2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./images/contact/contact-tab.png    1x,
+          ./images/contact/contact-tab_2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/contact/contact-mob.jpg    1x,
+          ./images/contact/contact-mob_2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        src="./images/contact/contact-desktop.png"
+        alt="Геймерські ґаджети"
+        width="1200"
+      />
+    </picture>
+  </div>
+
+  <!-- MAIN TEXT -->
+
+  <div class="container content-wrap">
+    <div class="contacts-wrap">
+      <p class="contacts-text">
+        In case of queries about order handling and/or delay, drop us an email
+        at
+        <br /><br />
+        <a class="contact-link" href="mailto:info@shopforgamers.com"
+          >info@shopforgamers.com
+        </a>
+      </p>
+      <ul class="contact-list">
+        <li class="contact-list__item">
+          <h3 class="contact-list__title">Email</h3>
+          <a class="contact-link" href="mailto:sfg.info@gmail.com"
+            >sfg.info@gmail.com</a
+          >
+        </li>
+        <li class="contact-list__item">
+          <h3 class="contact-list__title">Phone number</h3>
+          <a class="contact-link tel" href="tel:+380936432288"
+            >+38 (093) 643 22 88</a
+          >
+          <a class="contact-link tel" href="tel:+380503454423"
+            >+38 (050) 345 44 23</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- FORM -->
+
+    <div class="form-wrap">
+      <h2 class="form-title">Contact us</h2>
+      <form class="contact-form">
+        <div class="input-wrap">
+          <input
+            type="text"
+            name="name"
+            class="contact-input"
+            id="user-name"
+            placeholder=" "
+            pattern="[A-Za-z]{3,}"
+            title="The login can not be less than 3 characters and can include only Latin letters"
+            required
+          />
+          <label for="user-name" class="input-label">Name</label>
+        </div>
+
+        <div class="input-wrap">
+          <input
+            type="email"
+            name="email"
+            class="contact-input"
+            id="user-mail"
+            placeholder=" "
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
+          <label for="user-mail" class="input-label">Email</label>
+        </div>
+
+        <label for="user-text" class="comments-label">Leave your message</label>
+        <textarea
+          name="user-text"
+          id="user-text"
+          class="contact-comments"
+        ></textarea>
+
+        <button type="submit" class="form-btn">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
