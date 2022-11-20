@@ -203,11 +203,11 @@
 
   @media screen and (max-width: 767px) {
     padding-top: 168px;
-    background-image: url("../images/bgd-menu-mobile1x.jpg");
+    background-image: url("../images/main/bgd-menu-mobile1x.jpg");
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../images/bgd-menu-mobile@2x.jpg");
+      background-image: url("../images/main/bgd-menu-mobile@2x.jpg");
     }
 
     // @include retina('retina', 'bgd-menu', 'mobile', 'jpg') {};
@@ -215,11 +215,11 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 256px;
-    background-image: url("../images/bgd-menu-tablet1x.jpg");
+    background-image: url("../images/main/bgd-menu-tablet1x.jpg");
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../images/bgd-menu-tablet@2x.jpg");
+      background-image: url("../images/main/bgd-menu-tablet@2x.jpg");
     }
   }
 
