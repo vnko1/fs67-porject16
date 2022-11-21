@@ -1,5 +1,5 @@
 .sale {
-  margin-bottom: 48px;
+  padding-bottom: 48px;
 }
 
 .sale__container {
@@ -21,9 +21,8 @@
   line-height: 1.17;
   color: #ffffff;
   margin-bottom: 35px;
-  padding-left: 80px;
+  padding-left: 62px;
   @media screen and (min-width: 768px) {
-    padding-left: 142px;
     font-size: 56px;
   }
 }
