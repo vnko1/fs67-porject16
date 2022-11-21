@@ -1,5 +1,5 @@
 .accessories {
-    padding: 40px 0;
+    padding: 144px 0;
     margin: auto;
     max-width: 320px;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@
 
     @media screen and (min-width:768px) {
         max-width: 768px;
-        padding: 120px 0;
+        padding: 256px 0;
         background-image: url(/src/images/accessories/back-access-tablet.jpg);
 
         @media screen and (min-device-pixel-ratio: 2),
@@ -30,7 +30,7 @@
 
     @media screen and (min-width:1280px) {
         max-width: 1280px;
-        padding: 120px 0;
+
         background-image: url(/src/images/accessories/back-access-desktop.jpg);
 
         @media screen and (min-device-pixel-ratio: 2),
