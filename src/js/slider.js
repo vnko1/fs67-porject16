@@ -1,0 +1,1 @@
+$('.section-banners__sliders').section-banners__sliders();

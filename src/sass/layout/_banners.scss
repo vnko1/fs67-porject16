@@ -1,81 +1,150 @@
 .section-banners {
-    padding-bottom: 48px;
-    @include contentMedia($tablet) {
+  padding-bottom: 48px;
+  @include contentMedia($tablet) {
     padding: 120px 0px;
+  }
+
+  @include contentMedia($desktop) {
+    z-index: 1;
+    background-image: url(../images/main/background-desk-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/main/background-desk-2x.jpg);
     }
-
-    @include contentMedia($desktop) {
-        z-index: 1;
-        background-image: url(../images/main/background-desk-1x.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/main/background-desk-2x.jpg);
-        }
-    }
+  }
 }
 
-.banners-text {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
-    text-align: start;
-    white-space: pre-line;
-    position: absolute;
-    bottom: 24px;
-    left: 37px;
-    @include contentMedia($tablet) {
-        bottom: 14px;
-        left: 41px;
-        font-size: 56px;
-        line-height: 1.18;
-    }
-    @include contentMedia($desktop) {
-        bottom: 49px;
-        left: 345px;
-    }
-    background: linear-gradient(270deg,
-        #1edde0 13.26%,
-        #8bda41 51.01%,
-        #ef001b 107.89%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    //   text-fill-color: transparent;
-    color: transparent;
+.section-banners__text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: start;
+  white-space: pre-line;
+  // bottom: 24px;
+  // left: 37px;
+  @include contentMedia($tablet) {
+    // bottom: 14px;
+    // left: 41px;
+    font-size: 56px;
+    line-height: 1.18;
+  }
+  @include contentMedia($desktop) {
+    // bottom: 49px;
+    // left: 345px;
+  }
+  background: linear-gradient(
+    270deg,
+    #1edde0 13.26%,
+    #8bda41 51.01%,
+    #ef001b 107.89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  //   text-fill-color: transparent;
+  color: transparent;
 }
 
-.ellipse {
-    @extend %flex-centred;
-    gap: 16px;
+.section-banners__text-uppercase {
+  text-transform: uppercase;
 }
 
-.ellipse-current {
-    width: 40px;
-    height: 16px;
-
-    background: #ffffff;
-    border-radius: 30px;
+.section-banners__text-place {
+  background: linear-gradient(
+    270deg,
+    #1edde0 13.26%,
+    #8bda41 51.01%,
+    #ef001b 107.89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  //   text-fill-color: transparent;
+  color: transparent;
 }
 
-.ellipse-next {
-    width: 16px;
-    height: 16px;
-
-    background: #ffffff;
-    border-radius: 50%;
+.section-banners__text-shop {
+  background: linear-gradient(
+    270deg,
+    #03fe8f 4.61%,
+    #ebdcff 57.91%,
+    #ff98f3 92.2%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-.container-banners {
-    width: 100vw;
-    position: relative;
-    margin-bottom: 24px;
+.section-banners__text-products {
+  background: linear-gradient(
+    270deg,
+    #ffffff 13.26%,
+    #693cf9 60.87%,
+    #f475eb 107.89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-.banner-img {
-    width: 100vw;
+// .ellipse {
+//   @extend %flex-centred;
+//   gap: 16px;
+// }
+
+// .ellipse-current {
+//   width: 40px;
+//   height: 16px;
+
+//   background: #ffffff;
+//   border-radius: 30px;
+// }
+
+// .ellipse-next {
+//   width: 16px;
+//   height: 16px;
+
+//   background: #ffffff;
+//   border-radius: 50%;
+// }
+
+.section-banners__container {
+  width: 100vw;
+  // position: relative;
+  margin-bottom: 24px;
+}
+
+.section-banners__img {
+  width: 100vw;
+}
+
+.section-banners__banner {
+  position: relative;
+}
+.section-banners__text-box {
+  position: absolute;
+  // position: fixed;
+  bottom: 24px;
+  left: 37px;
+
+  @include contentMedia($tablet) {
+    bottom: 14px;
+    left: 41px;
+  }
+
+  @include contentMedia($desktop) {
+    bottom: 49px;
+    left: 345px;
+  }
+  min-width: 257px;
+  @include contentMedia($tablet) {
+    min-width: 596px;
+  }
 }
