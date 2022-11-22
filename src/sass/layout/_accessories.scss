@@ -1,11 +1,19 @@
+.container-access {
+    max-width: 320px;
+
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+    }
+}
+
 .accessories {
     position: relative;
     padding: 144px 0 449px 0;
     margin: auto;
-    max-width: 320px;
+    // max-width: 320px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     // height: 3198px;
 
     background-image: url(/src/images/accessories/back-access-mobile.jpg);
@@ -18,7 +26,7 @@
 
 
     @media screen and (min-width:768px) {
-        max-width: 768px;
+        // max-width: 768px;
         padding: 256px 0 335px 0;
         background-image: url(/src/images/accessories/back-access-tablet.jpg);
 
@@ -30,7 +38,7 @@
     }
 
     @media screen and (min-width:1280px) {
-        max-width: 1280px;
+        // max-width: 1280px;
         padding: 256px 0 338px 0;
         background-image: url(/src/images/accessories/back-access-desktop.jpg);
 
