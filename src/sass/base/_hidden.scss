@@ -34,12 +34,16 @@ margin-left: 40px;
 .text-1 {
   font-size: 56px;
   line-height: 56px;
-  
   margin-bottom: 52px;
+  margin-bottom: 24px;
+  
+     
 }
 .text-2 {
   display: inline-block;
   margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 .text-3 {
   float: left;
@@ -57,9 +61,29 @@ margin-left: 40px;
 .text-5 {
   margin-bottom: 16px;
   font-size: 24px;
+  line-height: normal;
 }
 .text-6 {
   text-align: right;
   font-size: 24px;
   color: #86E543;
+}
+.dote1 {
+  height: 16px;
+  width: 40px;
+  background-color: #ffff;
+  border-radius: 30px;
+  display: inline-block;
+  
+}
+.dote {
+  height: 16px;
+  width: 16px;
+  background-color: #ffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotes {
+  text-align: center;
+  margin-top: 48px;
 }
