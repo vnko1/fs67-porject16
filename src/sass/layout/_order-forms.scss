@@ -48,7 +48,7 @@
 // Input
 
 .order-form__input {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     width: 100%;
 
     background-color: rgba(0,0,0,0);
@@ -95,7 +95,7 @@
 
     &:not(:last-child) {
     @media screen and (min-width:1280px) {
-        margin-bottom: 40px;
+        margin-bottom: 43px;
     }
 }
 }
@@ -258,12 +258,23 @@
     @media screen and (max-width:1279px) {
         margin-bottom: 16px;
     }
-    
     border-color: transparent;
+
+    &:hover,
+    &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 
+    0px 4px 10px rgba(255, 255, 255, 0.1);
+}
 }
 
 .button-add {
     background-color: transparent;
     color: #86E543;
     border: 1px solid #86E543;
+
+    &:hover,
+    &:focus {
+    filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1)) 
+    drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+}
 }
