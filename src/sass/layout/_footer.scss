@@ -1,8 +1,9 @@
 .footer {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
   background-color: #001414;
+  z-index: 2;
 }
 
 .footer-box {
@@ -91,22 +92,22 @@
   }
 }
 
-.contacts {
+.footercontacts {
   text-align: left;
 }
 
-.contacts-item {
+.footercontacts-item {
   &:first-child {
     margin-bottom: 16px;
   }
 }
 
-.contacts-mail,
-.contacts-tel {
+.footercontacts-mail,
+.footercontacts-tel {
   color: #8d9289;
 }
 
-.contacts-title {
+.footercontacts-title {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -117,7 +118,7 @@
   margin-bottom: 8px;
 }
 
-.contacts-phone {
+.footercontacts-phone {
   &:first-child {
     margin-bottom: 8px;
   }
