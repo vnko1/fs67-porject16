@@ -1,0 +1,172 @@
+.take-order{
+    background-image: url(../images/take-order-dropdown/Take-order-mobile-bg-1.jpg);
+   
+   
+background-repeat: no-repeat;
+width: 100%;
+@media screen and (min-width: 767px){
+
+    max-width: 768px;
+    background-image: url(../images/take-order-dropdown/Take-order-tablet-bg-1.jpg);}
+    
+
+@media screen and (min-width: 1280px){
+    max-width: 1280px;
+    background-image: url(../images/take-order-dropdown/Take-order-desktop-bg-1.jpg);
+}
+
+}
+
+
+.desk{
+    @media screen and (min-width: 1280px){
+        display: flex;
+        justify-content: right;
+        
+        
+    }
+}
+
+.order-title{
+    margin-top: 40px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: FFFFFF;
+    @media screen and (min-width: 767px){
+        margin-top: 120px;
+        margin-left: 59px;
+        font-size: 56px;
+        line-height: 1.18;
+        
+    }
+}
+.order-subtitle{
+    margin-top: 24px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: FFFFFF;
+    @media screen and (min-width: 767px){
+        font-size: 56px;
+        line-height: 1.18;
+        white-space: nowrap;
+        letter-spacing: 0em;
+        
+        
+}
+
+}
+
+.product-img{
+    border-radius: 12px;
+    width: 100%;
+    @media screen and (min-width: 767px){
+        margin-right: auto;
+        margin-top: 24px;
+        max-width: 387px;
+        
+    }
+}
+
+.order-products{
+    margin-top: 16px;
+    align-items: center;
+    @media screen and (min-width: 767px){
+    display: flex;
+    flex-wrap: wrap;
+    align-items: initial;
+    
+}
+@media screen and (min-width: 1280px){
+    flex-wrap: nowrap;
+    
+}
+}
+
+
+
+
+.prices{
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: 767px){
+        display: block;
+        margin-left: 40px;}
+        @media screen and (min-width: 1280px){
+            display: flex;
+            align-items: center;
+            margin-left: 121px
+
+        }
+        }
+
+.order-old-price{
+    margin-top: 16px;
+    text-decoration: line-through;
+    font-family: 'Roboto';
+    font-style: 500;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: #8D9289;
+    @media screen and (min-width: 767px){
+        margin-top: 93px;
+        font-size: 24px;
+    }
+    @media screen and (min-width: 1280px){
+        font-size: 24px;
+        margin-top: 0;
+        margin-right: 70px;
+    }
+}
+
+.order-new-price{
+    margin-top: 24px;
+    
+    font-family: 'Roboto';
+    font-style: 500;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: #86E543; 
+    @media screen and (min-width: 767px){
+        margin-top: 56px;
+        font-size: 48px;
+    }
+    @media screen and (min-width: 1280px){
+        margin: 0;
+    }
+}
+.sale{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    @media screen and (min-width: 767px){
+        margin-top: 24px;
+    }
+    @media screen and (min-width: 1280px){
+        margin-top: 40px;
+        margin-left: auto;
+    }
+    
+}
+
+.order-headphone:not(:last-child){
+    margin-right: 16px;
+    @media screen and (min-width: 767px){
+        margin-right: 24px;
+    }
+}
+
+.product-bottom{
+    border-radius: 4px;
+    @media screen and (min-width: 1280px){
+        border-radius: 6px;  
+    }
+ }
+
