@@ -2,7 +2,7 @@
   padding: 40px+104px 0 48px+401px;
 
   @media screen and (min-width: $tablet) {
-    padding: 120px+136px 0 114px+215px;
+    padding: 120px+136px 0 120px+215px;
 
     background-image: url(../images/contact/bg-tab.jpg);
     background-repeat: no-repeat;
@@ -133,9 +133,13 @@
   color: inherit;
 }
 
+.link {
+  display: block;
+  color: inherit;
+}
+
 .contacts__link {
   color: #8d9289;
-  display: block;
 }
 
 .contacts-list {
@@ -176,7 +180,7 @@
 
 .form-wrap {
   @media screen and (min-width: $tablet) {
-    width: 591px;
+    width: 590px;
   }
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
     margin-right: auto;
