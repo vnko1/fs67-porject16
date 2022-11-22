@@ -4,6 +4,10 @@
     @media screen and (min-width:768px) {
         max-width: 768px;
     }
+
+    @media screen and (min-width:1280px) {
+        max-width: 1280px;
+    }
 }
 
 .accessories {
@@ -39,6 +43,7 @@
 
     @media screen and (min-width:1280px) {
         // max-width: 1280px;
+        background-size: cover;
         padding: 256px 0 338px 0;
         background-image: url(/src/images/accessories/back-access-desktop.jpg);
 
@@ -312,31 +317,116 @@
 }
 
 
-.block_1 {
-    display: flex;
+
+.top-line-container {
     position: absolute;
-    top: 400px;
     left: 0;
-    width: 100vw;
+    top: 310px;
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+        top: 440px;
+    }
+}
+
+.top-line {
+    height: 8px;
+
+    @media screen and (min-width: 768px) {
+        height: 19px;
+    }
+}
+
+.top-left-part {
+    width: 58vw;
+    border-bottom: 1px solid #7be34a;
+    border-right: 0.5px solid #7be34a;
+
+    @media screen and (min-width: 480px) {
+        width: 55vw;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 69vw;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 42vw;
+    }
 
 }
 
-.line_1 {
+.top-right-part {
+    width: 42vw;
+    border-top: 1px solid #7be34a;
+    border-left: 0.5px solid #7be34a;
 
-    height: 19px;
-    width: 30vw;
 
-    border-bottom: 1px solid #7BE34A;
-    border-right: 1px solid #7BE34A;
-    box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+    @media screen and (min-width: 480px) {
+        width: 45vw;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 31vw;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 58vw;
+    }
+}
+
+.bottom-line-container {
+    position: absolute;
+    left: 0;
+    top: 313px;
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+        top: 448px;
+    }
+}
+
+.bottom-line {
+    height: 8px;
+
+    @media screen and (min-width: 768px) {
+        height: 19px;
+    }
+}
+
+.bottom-left-part {
+    width: 59vw;
+    border-bottom: 1px solid #28780d;
+    border-right: 0.5px solid #28780d;
+
+    @media screen and (min-width: 480px) {
+        width: 55.7vw;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 70vw;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 42.6vw;
+    }
 
 }
 
-.line_2 {
+.bottom-right-part {
+    width: 41vw;
+    border-top: 1px solid #28780d;
+    border-left: 0.5px solid #28780d;
 
-    height: 19px;
-    width: 70vw;
-    border-top: 1px solid #7BE34A;
-    box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+    @media screen and (min-width: 480px) {
+        width: 44.3vw;
+    }
 
+    @media screen and (min-width: 768px) {
+        width: 30vw;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 57.4vw;
+    }
 }
