@@ -300,7 +300,13 @@
     justify-content: center;
     gap: 16px;
 
-    // &__item {}
+    &__item {
+        @media screen and (min-width:1280px) {
+            &:nth-last-child(-n + 2) {
+                display: none;
+            }
+        }
+    }
 
     &__point {
         display: block;
@@ -308,12 +314,16 @@
         height: 16px;
         background-color: #FFFFFF;
         border-radius: 50%;
+
+
     }
 
     &__point--oval {
         width: 40px;
         border-radius: 30px;
     }
+
+
 }
 
 
