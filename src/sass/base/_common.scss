@@ -9,13 +9,27 @@ body {
   background-color: $main-bg-color;
 }
 
+.common-body-style {
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mwContentMedia($tablet) {
+    background-image: url(../images/main/main-bg-mobile.jpg);
+    @include retina(main, main-bg, mobile, jpg);
+  }
+
+  @include andContentMedia($tablet, $desktop) {
+    background-image: url(../images/main/main-bg-tablet.jpg);
+    @include retina(main, main-bg, tablet, jpg);
+  }
+}
+
 .container {
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   @extend %centred;
 
-  @include contentMedia($mobile) {
+  @include contentMedia(480px) {
     width: $mobile;
   }
 

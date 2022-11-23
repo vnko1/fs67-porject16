@@ -7,5 +7,11 @@
     <link rel="stylesheet" href="./sass/main.scss" />
     <script type="module" src="./index.js"></script>
   </head>
-  <body></body>
+  <body class="common-body-style">
+    <!-- в мейн підключаються паршалы секцій, хедер та футер перед мейном та після -->
+    <include src="./partials/header.html"></include>
+    <main></main>
+    <include src="./partials/footer.html"></include>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
 </html>

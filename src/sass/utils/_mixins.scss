@@ -4,7 +4,7 @@
 
 @mixin media($width) {
   @media screen and (min-width: $width) {
-    min-width: $width;
+    width: $width;
   }
 }
 
@@ -14,18 +14,24 @@
   }
 }
 
-// @mixin mwContentMedia($width) {
-//   @media screen and (max-width: $width - 1px) {
-//     @content;
-//   }
-// }
+@mixin mwContentMedia($width) {
+  @media screen and (max-width: ($width - 1px)) {
+    @content;
+  }
+}
 
-@mixin retina($name, $width, $type) {
+@mixin andContentMedia($minWidth, $maxWidth) {
+  @media screen and (min-width: $minWidth) and (max-width: ($maxWidth - 1px)) {
+    @content;
+  }
+}
+
+@mixin retina($folder, $name, $width, $type) {
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/#{$name}-#{$width}@2x.#{$type});
+    background-image: url(../images/#{$folder}/#{$name}-#{$width}@2x.#{$type});
     @content;
   }
 }
