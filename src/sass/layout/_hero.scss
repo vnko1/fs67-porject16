@@ -1,45 +1,210 @@
-.hero {
-  padding-top: 104px;
-
+.hero__container {
+  position: relative;
+  @include mwContentMedia(480px) {
+    width: 320px;
+  }
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 180px + 104px;
+  padding-bottom: 127px;
   background-image: url(../images/main/heroBg@1x.jpg);
   @include heroRetina(heroBg, jpg);
   background-size: cover;
   background-position: right -140px top 0;
   background-repeat: no-repeat;
   @include contentMedia($tablet) {
-    padding-top: 136px;
-
+    padding-top: 154px + 136px;
+    padding-bottom: 208px;
+    background-image: url(../images/main/heroBg@1x.jpg);
     background-size: 150%;
     background-position: left 55% top 70px;
-  }
-}
-
-.hero__container {
-  position: relative;
-  @include mwContentMedia(480px) {
-    width: 320px;
-  }
-  padding-top: 180px;
-  padding-bottom: 127px;
-  @include contentMedia($tablet) {
-    padding-top: 154px;
-    padding-bottom: 208px;
   }
   overflow: hidden;
 }
 
+.hero__icons {
+  @include mwContentMedia($tablet) {
+    display: none;
+  }
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: hard-light;
+  opacity: 0.25;
+  filter: drop-shadow(0px 3.06266px 19.1416px #5eec36);
+}
+
+.icons-1 {
+  width: 669px;
+  height: 590px;
+  top: 176px;
+  right: 16px;
+  background-image: url(../icons/vector-8.svg);
+  transform: rotate(-180deg);
+}
+
+.icons-2 {
+  width: 42.77px;
+  height: 115px;
+  top: 384px;
+  right: 128px;
+  background-image: url(../icons/vector-10.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+}
+
+.icons-3 {
+  width: 42.77px;
+  height: 115px;
+  top: 471px;
+  left: 189px;
+  background-image: url(../icons/vector-15.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+  transform: rotate(132.61deg);
+}
+.icons-4 {
+  width: 153.13px;
+  height: 62.71px;
+  top: 487px;
+  left: 77px;
+  background-image: url(../icons/vector-11.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+  transform: rotate(46.52deg);
+}
+
+.icons-5 {
+  width: 137.82px;
+  height: 56.44px;
+  top: 125.65px + 136px;
+  right: 144px;
+  background-image: url(../icons/vector-16.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+  transform: matrix(0.88, 0.47, 0.47, -0.88, 0, 0);
+}
+
+.icons-6 {
+  width: 253.52px;
+  height: 254.21px;
+  right: 140px;
+  top: 470.67px;
+  background-image: url(../icons/vector-9.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+}
+
+.icons-7 {
+  width: 253.52px;
+  height: 254.21px;
+  top: 169px;
+  left: 173px;
+  background-image: url(../icons/vector-12.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+  transform: rotate(-164.06deg);
+}
+
+.icons-8 {
+  width: 150.35px;
+  height: 88.41px;
+  left: 227px;
+  bottom: 122px;
+  background-image: url(../icons/vector-18.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+}
+
+.icons-9 {
+  width: 237.52px;
+  height: 101.48px;
+  bottom: 232px;
+  right: 183px;
+  background-image: url(../icons/vector-13.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+}
+
+.icons-10 {
+  width: 237.52px;
+  height: 101.48px;
+  top: 284px;
+  right: 200px;
+  background-image: url(../icons/vector-14.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+  transform: rotate(-151.36deg);
+}
+
+.icons-11 {
+  width: 155.43px;
+  height: 130.93px;
+  top: 415px;
+  right: 302px;
+  background-image: url(../icons/vector-17.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+}
+
+.icons-12 {
+  width: 19.14px;
+  height: 17.11px;
+  left: 96px;
+  bottom: 118px;
+  background-image: url(../icons/vector-23.svg);
+  background-color: rgba(123, 227, 74, 0.3);
+  border: 0.765664px solid #7be34a;
+}
+
+.icons-13 {
+  width: 26.8px;
+  height: 27.94px;
+  left: 64px;
+  top: 189px;
+  background-image: url(../icons/vector-21.svg);
+  background-color: rgba(123, 227, 74, 0.3);
+  border: 0.765664px solid #7be34a;
+}
+
+.icons-14 {
+  width: 22.97px;
+  height: 23.95px;
+  right: 66px;
+  bottom: 148px;
+  background-image: url(../icons/vector-22.svg);
+  background: rgba(123, 227, 74, 0.3);
+  border: 0.765664px solid #7be34a;
+  transform: rotate(-77.1deg);
+}
+
+.icons-15 {
+  width: 42.88px;
+  height: 47.39px;
+  right: 97px;
+  bottom: 74px;
+  background-image: url(../icons/vector-24.svg);
+}
+
 .hero__mouse-container {
+  position: absolute;
   width: 60px;
   height: 99px;
-  position: absolute;
   transform: rotate(-29deg);
   left: 32px;
-  top: 65px;
+  top: 57px + 104px;
   background-image: url(../images/main/mouseBg@1x.png);
   @include heroRetina(mouseBg, png);
   background-size: 100%;
   background-repeat: no-repeat;
   mix-blend-mode: luminosity;
+  @include contentMedia($tablet) {
+    width: 100px;
+    height: 165px;
+    top: 185px;
+    left: 430px;
+    transform: rotate(-31.92deg);
+  }
 }
 
 .hero__headphones-container {
@@ -47,13 +212,21 @@
   height: 186px;
   position: absolute;
   transform: rotate(28deg);
-  right: -10px;
-  top: -25px;
+  right: -6px;
+  top: 80px;
   background-image: url(../images/main/headphonesBg@1x.png);
   @include heroRetina(headphonesBg, png);
   background-size: 100%;
   background-repeat: no-repeat;
   mix-blend-mode: luminosity;
+
+  @include contentMedia($tablet) {
+    width: 180px;
+    height: 223px;
+    top: 362px;
+    right: 20px;
+    transform: rotate(10.77deg);
+  }
 }
 
 .hero__keyboard-container {
@@ -62,12 +235,28 @@
   position: absolute;
   transform: rotate(24deg);
   right: 74px;
-  bottom: 40px;
+  bottom: 50px;
   background-image: url(../images/main/keyboardBg@1x.png);
   @include heroRetina(keyboardBg, png);
   background-size: 100%;
   background-repeat: no-repeat;
   mix-blend-mode: luminosity;
+  @include contentMedia($tablet) {
+    width: 143px;
+    height: 69px;
+    bottom: 128px;
+    right: 188px;
+    transform: rotate(21.68deg);
+  }
+}
+
+.hero__content-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  @include contentMedia($tablet) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .hero__title {
