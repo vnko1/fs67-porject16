@@ -1,6 +1,5 @@
 .take-order{
-    
-    padding-top: 144px;
+  
     background-image: url(../images/take-order-dropdown/Take-order-mobile-bg-1.jpg);
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -11,8 +10,8 @@
 background-repeat: no-repeat;
 
 @media screen and (min-width: 767px){
-    padding-top: 256px;
-    width: 100%;
+  padding-top: 256px;
+    
     background-image: url(../images/take-order-dropdown/Take-order-tablet-bg-1.jpg);}
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -21,7 +20,6 @@ background-repeat: no-repeat;
   }
 
 @media screen and (min-width: 1280px){
-    
     background-image: url(../images/take-order-dropdown/Take-order-desktop-bg-1.jpg);
 }
 @media (min-device-pixel-ratio: 2),
@@ -31,33 +29,29 @@ background-repeat: no-repeat;
   }
 }
 
-.order-container{
+.take-order__container{
     @media screen and (min-width: 1280px){
-        display: none;
+        display: none;   
     }  
 }
 
-
-
-
-.order-title{
-    position: relative;
+.take-order__title{
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
     color: FFFFFF;
     @media screen and (min-width: 767px){
-        margin-left: 59px;
         font-size: 56px;
         line-height: 1.18;
+        margin-left: 59px;
         
     }   
+    @media screen and (min-width: 1280px) {
+      margin-left: 121px;
+    }
 }
-.order-subtitle{
-    
-    margin-top: 24px;
+.subhead{
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 32px;
@@ -68,27 +62,18 @@ background-repeat: no-repeat;
         font-size: 56px;
         line-height: 1.18;
         white-space: nowrap;
-        letter-spacing: 0em;
-        
-        
+        letter-spacing: 0em;       
 }
 }
 
-
-.product-img{
+.sales__photo{
     border-radius: 12px;
     width: 100%;
     @media screen and (min-width: 767px){
-        margin-right: auto;
-        margin-top: 24px;
         max-width: 387px;}
-        @media screen and (min-width: 1280px){
-            margin-top: 48px;
-            
-     
-}}
+        }
 
-.order-products{
+.desktop__products{
     margin-top: 16px;
     align-items: center;
     @media screen and (min-width: 767px){
@@ -98,15 +83,11 @@ background-repeat: no-repeat;
     
 }
 @media screen and (min-width: 1280px){
-    flex-wrap: nowrap;
-    
+    flex-wrap: nowrap;   
 }
 }
 
-
-
-
-.prices{
+.price{
     display: flex;
     justify-content: space-between;
     @media screen and (min-width: 767px){
@@ -116,15 +97,13 @@ background-repeat: no-repeat;
             margin-left: 0px;
             display: flex;
             align-items: center;
-            justify-content: unset;
-            
-            
-            
+            justify-content: unset;    
         }
-       
         }
 
-.order-old-price{
+        
+
+.price__before{
     margin-top: 16px;
     text-decoration: line-through;
     font-family: 'Roboto';
@@ -144,7 +123,7 @@ background-repeat: no-repeat;
     
 }
 
-.order-new-price{
+.price__now{
     margin-top: 24px;
     
     font-family: 'Roboto';
@@ -162,7 +141,7 @@ background-repeat: no-repeat;
         
     }}
 
-.sale{
+.sales{
     display: flex;
     align-items: center;
     margin-top: 16px;
@@ -171,19 +150,17 @@ background-repeat: no-repeat;
         @media screen and (min-width: 1280px){
             margin-top: 40px;
         }
-    }
-    
-    
+    }   
 }
 
-.order-headphone:not(:last-child){
+.sales__item:not(:last-child){
     margin-right: 16px;
     @media screen and (min-width: 767px){
         margin-right: 24px;
     }
 }
 
-.product-bottom{
+.sales__image{
     border-radius: 4px;
     @media screen and (min-width: 1280px){
         border-radius: 6px;  
@@ -196,64 +173,91 @@ background-repeat: no-repeat;
     } 
 }
 
-.right-container{
+.desktop-right{
     margin-left: auto;
     
 }
-.ccc{
+.for-desktop-part{
     display: flex;
+    align-items: flex-end;
+    
 }
+
+.line {
+  display: flex;
+  width: 100%;
   
-  .top-line-container {
-    position: absolute;
-    top: 30px;
-    display: flex;
-    @media screen and (min-width: 768px) {
-      top: 58px;
-    }
+  &:last-child {
+      margin-bottom: 20px;
   }
-  .top-line {
-    height: 8px;
+  @media screen and (min-width: 768px) {
+      &:last-child {
+          margin-bottom: 40px;
+      }
   }
-  .top-left-part {
-    width: 50vw;
-    @media screen and (min-width: 1280px) {
-      width: 30vw;
-    }
-    border-bottom: 1px solid #7be34a;
-    border-right: 0.5px solid #7be34a;
+
+  @media screen and (min-width: 1280px) {
+      &:last-child {
+          margin-bottom: 48px;
+      }
   }
-  .top-right-part {
-    width: 100vw;
-    border-top: 1px solid #7be34a;
-    border-left: 0.5px solid #7be34a;
+
+}
+
+.line__super-line1 {
+  width: 250px;
+  height: 8px;
+  border: 1px solid #7BE34A;
+  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+  border-left: transparent;
+  border-top: transparent;
+  margin-left: -15px;
+  @media screen and (min-width: 768px) {
+    width: 840px;
+}
+  @media screen and (min-width: 1280px) {
+      width: 600px;
   }
+}
+
+.line__super-line2 {
+
+  width: 100%;
+  height: 1px;
+  border: 1px solid #7BE34A;
+  border-left: transparent;
+  border-top: transparent;
+  margin-bottom: 3px;
+  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+  margin-right: -15px;
+}
+
+.line__super-line3 {
+  width: 260px;
+  height: 8px;
+  border: 1px solid #28780D;
+  border-left: transparent;
+  border-top: transparent;
+  margin-left: -15px;
+  margin-top: -4px;
+  box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
   
-  .bottom-line-container {
-    position: absolute;
-    top: 36px;
-    display: flex;
-    @media screen and (min-width: 768px) {
-      top: 64px;
+  @media screen and (min-width: 768px) {
+          width: 850px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 600px;
     }
-  }
-  .bottom-line {
-    height: 8px;
-  }
-  .bottom-left-part {
-    width: 51vw;
-    @media screen and (min-width: 768px) {
-      width: 51.2vw;
-    }
-    @media screen and (min-width: 1280px) {
-      width: 30.6vw;
-    }
-    border-bottom: 1px solid #28780d;
-    border-right: 0.5px solid #28780d;
-  }
-  
-  .bottom-right-part {
-    width: 100vw;
-    border-top: 1px solid #28780d;
-    border-left: 0.5px solid #28780d;
-  }
+}
+
+.line__super-line4{
+  width: 100%;
+  height: 1px;
+  border: 1px solid #28780D;
+  border-left: transparent;
+  border-top: transparent;
+  margin-top: -4px;
+  margin-bottom: 48px;
+  box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+  margin-right: -15px;
+}
