@@ -60,6 +60,8 @@
     }
     @include desktop {
       @include font(600, 56px, 1.00, null);
+      width: 1196px;
+      height: 56px;
     }
     text-align: left;
     color: #FFFFFF;
@@ -81,9 +83,18 @@
     margin-bottom: 20px;
   }
 
-//  .top-info {
+  .top-info {
+    @media screen and (min-width: 1200px) {
+      display: none;      
+    }
+  }
 
-//  }
+  .top-info-desctop {
+    @media screen and (max-width: 1199px) {
+      display: none;      
+    }
+  }
+  
   .top-info-box {
     display: block;
     @include tablet {
@@ -92,6 +103,14 @@
     justify-content: start;
     gap: 40px;
     }
+  }
+
+  .top-info-box-desctop {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 131px;
+    align-items: center;
   }
 
   .top-text {
@@ -111,7 +130,14 @@
     align-items: flex-start;
     justify-content: flex-end;
     }
+    @include desktop {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    }
 }
+
   .top-text__title {
     @include font(600, 16px, 1.00, null);
     color: #FFFFFF;
@@ -124,9 +150,9 @@
       width: 248px;
     }
     @include desktop {
-      @include font(600, 24px, 1.00, null);
+      @include font(400, 24px, 1.16, null);
       color: #86E543;
-      margin-bottom: 24px;
+      width: 249px;
     }
   }
 
@@ -140,9 +166,11 @@
         width: 248px;
       }
     @include desktop {
-        @include font(600, 24px, 1.00, null);
+        @include font(400, 24px, 1.16, null);
         color: #8D9289;
-        margin-bottom: 24px;
+        width: 347px;
+        margin-right: 40px;
+        margin-left: 96px;
       }
   }
 
@@ -155,7 +183,7 @@
         @include font(600, 24px, 1.16, null);
       } 
     @include desktop {
-        @include font(600, 24px, 1.16, null);
+        @include font(400, 24px, 1.16, null);
       }   
   }
 
@@ -176,6 +204,11 @@
         color: #86E543;
         max-width: 688px;
       } 
+      @include tablet {
+        @include font(600, 24px, 1.16, null);
+        color: #86E543;
+        max-width: 1200px;
+      }
   }
 
 //  .checklist-list {
@@ -193,6 +226,7 @@
     @include desktop {
       @include font(400, 24px, 1.17, null);
       color: #86E543;
+      max-width: 1200px;
     }
   }
 
@@ -206,6 +240,7 @@
       } 
     @include desktop {
         @include font(600, 24px, 1.16, null);
+        max-width: 1200px;
       } 
       
   }
