@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 180px+104px;
+  padding-top: 104px;
   padding-bottom: 127px;
   background-image: url(../images/main/heroBg@1x.jpg);
 
@@ -10,15 +10,18 @@
 
 .hero__container {
   position: relative;
+  padding-top: 180px;
 }
 
 .hero__mouse-container {
   width: 60px;
   height: 99px;
   position: absolute;
-  left: 15%;
-  top: -50%;
+  transform: rotate(-29deg);
+  left: 32px;
+  top: 85px;
   background-image: url(../images/main/mouseBg-mob@1x.png);
+  @include retina(main, mouseBg, mob, png);
   background-size: 60px 99px;
   background-repeat: no-repeat;
   mix-blend-mode: luminosity;
@@ -28,8 +31,6 @@
 }
 .hero__headphones-container {
 }
-
-// background-position: left 16px top 162px,
 
 .hero__title {
   margin-bottom: 25px;
