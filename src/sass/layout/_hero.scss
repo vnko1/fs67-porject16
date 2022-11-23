@@ -1,12 +1,36 @@
 .hero {
   padding-top: 180px+104px;
   padding-bottom: 127px;
+  background-image: url(../images/main/heroBg@1x.jpg);
+
+  background-size: cover;
+  background-position: right -140px top 0;
+  background-repeat: no-repeat;
 }
 
 .hero__container {
+  position: relative;
 }
-.container {
+
+.hero__mouse-container {
+  width: 60px;
+  height: 99px;
+  position: absolute;
+  left: 15%;
+  top: -50%;
+  background-image: url(../images/main/mouseBg-mob@1x.png);
+  background-size: 60px 99px;
+  background-repeat: no-repeat;
+  mix-blend-mode: luminosity;
 }
+
+.hero__keyboard-container {
+}
+.hero__headphones-container {
+}
+
+// background-position: left 16px top 162px,
+
 .hero__title {
   margin-bottom: 25px;
   font-weight: 500;
@@ -19,4 +43,13 @@
   }
 }
 .hero__link {
+  width: 173px;
+  height: 51px;
+  @extend %centred;
+  @extend %flex-centred;
+  font-weight: 700;
+  line-height: calc(19 / 16);
+  border-radius: 16px;
+  background-color: #86e543;
+  color: $main-bg-color;
 }
