@@ -1,4 +1,4 @@
-.main {
+.main-article {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -52,11 +52,11 @@
     font-style: normal;
     font-weight: 500;
     margin-bottom: 31px;
-    padding-left: 16px;
-    padding-right: 16px;
     @include font(600, 24px, 1.16, null);
     @include tablet {
       @include font(600, 56px, 1.00, null);
+      width: 688px;
+      height: 112px;
     }
     @include desktop {
       @include font(600, 56px, 1.00, null);
@@ -66,6 +66,7 @@
   }
 
   .blog-article__icon--top {
+    width: 100%;
     color: #7BE34A;
     border: 1px solid #7BE34A;
     box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
@@ -73,9 +74,11 @@
   }
 
   .blog-article__icon--bottom {
+    width: 100%;
     color: #28780D;
     border: 1px solid #28780D;
     box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+    margin-bottom: 20px;
   }
 
 //  .top-info {
@@ -83,19 +86,30 @@
 //  }
 
   .top-text {
-    width: 288px;
+    max-width: 288px;
     margin-top: 20px;
     margin-bottom: 48px;
+    @include tablet {
+      max-width: 688px;
+    }
 }
 
+  .top-text-title__title {
+    @include tablet {
+    display: flex;
+    align-items: flex-end;
+    }
+}
   .top-text__title {
     @include font(600, 16px, 1.00, null);
     color: #FFFFFF;
+    margin-top: 20px;
     margin-bottom: 8px;
     @include tablet {
       @include font(600, 24px, 1.00, null);
       color: #86E543;
-      margin-bottom: 8px;
+      margin-bottom: 32px;
+      width: 248px;
     }
     @include desktop {
       @include font(600, 24px, 1.00, null);
@@ -111,7 +125,7 @@
     @include tablet {
         @include font(600, 24px, 1.00, null);
         color: #8D9289;
-        margin-bottom: 16px;
+        width: 248px;
       }
     @include desktop {
         @include font(600, 24px, 1.00, null);
@@ -124,6 +138,7 @@
     @include font(400, 16px, 1.14, null);
     color: #FFFFFF;
     margin-bottom: 20px;
+    margin-top: 10px;
     @include tablet {
         @include font(600, 24px, 1.16, null);
       } 
@@ -132,9 +147,14 @@
       }   
   }
 
-//  .checklist {
-
-//  }
+  .checklist {
+    max-width: 288px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include tablet {
+      max-width: 688px;
+    }
+  }
 
   .checklist__top-text {
     @include font(400, 16px, 1.14, null);
@@ -142,6 +162,7 @@
     @include tablet {
         @include font(600, 24px, 1.16, null);
         color: #86E543;
+        max-width: 688px;
       } 
   }
 
@@ -155,8 +176,9 @@
     @include tablet {
       @include font(400, 24px, 1.17, null);
       color: #86E543;
+      max-width: 688px;
     }
-    @include tablet {
+    @include desktop {
       @include font(400, 24px, 1.17, null);
       color: #86E543;
     }
@@ -165,12 +187,15 @@
   .checklist__text {
     @include font(400, 16px, 1.14, null);
     color: #FFFFFF;
+    margin-bottom: 20px;
     @include tablet {
         @include font(600, 24px, 1.16, null);
+        max-width: 688px;
       } 
     @include desktop {
         @include font(600, 24px, 1.16, null);
       } 
+      
   }
 
 
