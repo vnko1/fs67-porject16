@@ -2,10 +2,16 @@
   padding-top: 104px;
 
   background-image: url(../images/main/heroBg@1x.jpg);
-
+  @include heroRetina(heroBg, jpg);
   background-size: cover;
   background-position: right -140px top 0;
   background-repeat: no-repeat;
+  @include contentMedia($tablet) {
+    padding-top: 136px;
+
+    background-size: 150%;
+    background-position: left 55% top 70px;
+  }
 }
 
 .hero__container {
@@ -15,6 +21,10 @@
   }
   padding-top: 180px;
   padding-bottom: 127px;
+  @include contentMedia($tablet) {
+    padding-top: 154px;
+    padding-bottom: 208px;
+  }
   overflow: hidden;
 }
 
@@ -26,7 +36,7 @@
   left: 32px;
   top: 65px;
   background-image: url(../images/main/mouseBg@1x.png);
-  @include heroRetina(mouseBg);
+  @include heroRetina(mouseBg, png);
   background-size: 100%;
   background-repeat: no-repeat;
   mix-blend-mode: luminosity;
@@ -40,7 +50,7 @@
   right: -10px;
   top: -25px;
   background-image: url(../images/main/headphonesBg@1x.png);
-  @include heroRetina(headphonesBg);
+  @include heroRetina(headphonesBg, png);
   background-size: 100%;
   background-repeat: no-repeat;
   mix-blend-mode: luminosity;
@@ -54,7 +64,7 @@
   right: 74px;
   bottom: 40px;
   background-image: url(../images/main/keyboardBg@1x.png);
-  @include heroRetina(keyboardBg);
+  @include heroRetina(keyboardBg, png);
   background-size: 100%;
   background-repeat: no-repeat;
   mix-blend-mode: luminosity;
@@ -67,10 +77,21 @@
   line-height: calc(38 / 32);
   text-align: center;
 
-  & > span {
-    display: block;
+  @include mwContentMedia($tablet) {
+    & > span {
+      display: block;
+    }
+  }
+
+  @include contentMedia($tablet) {
+    margin-bottom: 94px;
+    max-width: 388px;
+    font-size: 56px;
+    line-height: calc(66 / 56);
+    text-align: left;
   }
 }
+
 .hero__link {
   width: 173px;
   height: 51px;
@@ -79,6 +100,15 @@
   font-weight: 700;
   line-height: calc(19 / 16);
   border-radius: 16px;
+  text-transform: uppercase;
   background-color: #86e543;
   color: $main-bg-color;
+  @include contentMedia($tablet) {
+    margin: 0;
+    width: 306px;
+    height: 70px;
+
+    font-size: 32px;
+    line-height: calc(38 / 32);
+  }
 }

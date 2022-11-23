@@ -36,12 +36,12 @@
   }
 }
 
-@mixin heroRetina($name) {
+@mixin heroRetina($name, $type) {
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/main/#{$name}@2x.png);
+    background-image: url(../images/main/#{$name}@2x.#{$type});
     @content;
   }
 }
