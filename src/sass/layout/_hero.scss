@@ -1,0 +1,22 @@
+.hero {
+  padding-top: 180px+104px;
+  padding-bottom: 127px;
+}
+
+.hero__container {
+}
+.container {
+}
+.hero__title {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: calc(38 / 32);
+  text-align: center;
+
+  & > span {
+    display: block;
+  }
+}
+.hero__link {
+}

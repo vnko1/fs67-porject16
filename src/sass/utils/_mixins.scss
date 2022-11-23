@@ -51,13 +51,12 @@
   $type-thirst-layer,
   $folder-fourth-layer,
   $name-fourth-layer,
-  $width-fourth-layer,
   $type-fourth-layer
 ) {
   background-image: url(../images/#{$folder-first-layer}/#{$name-first-layer}-#{$width-first-layer}@1x.#{$type-first-layer}),
     url(../images/#{$folder-second-layer}/#{$name-second-layer}-#{$width-second-layer}@1x.#{$type-second-layer}),
     url(../images/#{$folder-thirst-layer}/#{$name-thirst-layer}-#{$width-thirst-layer}@1x.#{$type-thirst-layer}),
-    url(../images/#{$folder-fourth-layer}/#{$name-fourth-layer}-#{$width-fourth-layer}@1x.#{$type-fourth-layer});
+    url(../images/#{$folder-fourth-layer}/#{$name-fourth-layer}@1x.#{$type-fourth-layer});
 }
 
 @mixin heroRetina(
@@ -75,7 +74,6 @@
   $type-thirst-layer,
   $folder-fourth-layer,
   $name-fourth-layer,
-  $width-fourth-layer,
   $type-fourth-layer
 ) {
   @media (min-device-pixel-ratio: 2),
@@ -85,7 +83,7 @@
     background-image: url(../images/#{$folder-first-layer}/#{$name-first-layer}-#{$width-first-layer}@2x.#{$type-first-layer}),
       url(../images/#{$folder-second-layer}/#{$name-second-layer}-#{$width-second-layer}@2x.#{$type-second-layer}),
       url(../images/#{$folder-thirst-layer}/#{$name-thirst-layer}-#{$width-thirst-layer}@2x.#{$type-thirst-layer}),
-      url(../images/#{$folder-fourth-layer}/#{$name-fourth-layer}-#{$width-fourth-layer}@2x.#{$type-fourth-layer});
+      url(../images/#{$folder-fourth-layer}/#{$name-fourth-layer}@2x.#{$type-fourth-layer});
     @content;
   }
 }
