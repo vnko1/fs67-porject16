@@ -84,6 +84,15 @@
 //  .top-info {
 
 //  }
+  .top-info-box {
+    display: block;
+    @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 40px;
+    }
+  }
 
   .top-text {
     max-width: 288px;
@@ -95,9 +104,12 @@
 }
 
   .top-text-title__title {
+    display: block;
     @include tablet {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
     }
 }
   .top-text__title {
