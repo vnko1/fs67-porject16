@@ -1,7 +1,4 @@
 // Andrii Valenko
-main {
-  padding: 600px 0;
-}
 
 .contact__backdrop {
   position: fixed;
@@ -13,7 +10,7 @@ main {
   transition: opacity $transition-duration-value $timing-function-value,
     transform $transition-duration-value $timing-function-value,
     visibility $transition-duration-value $timing-function-value;
-  // overflow-y: scroll;
+  overflow-y: scroll;
   background-color: rgba(0, 20, 20, 0.8);
 
   &.is-hidden {
@@ -25,11 +22,11 @@ main {
 .contact__modal {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 100px + 104px;
   width: 272px;
   height: 395px;
   padding: 20px;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 
   @include contentMedia($tablet) {
     top: 200px + 136px;

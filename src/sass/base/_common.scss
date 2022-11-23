@@ -7,6 +7,10 @@ body {
   line-height: 19px;
   color: $main-font-color;
   background-color: $main-bg-color;
+
+  &.is-open {
+    overflow: hidden;
+  }
 }
 
 .common-body-style {
