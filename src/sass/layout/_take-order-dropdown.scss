@@ -10,8 +10,6 @@
 background-repeat: no-repeat;
 
 @media screen and (min-width: 767px){
-  padding-top: 256px;
-    
     background-image: url(../images/take-order-dropdown/Take-order-tablet-bg-1.jpg);}
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -31,9 +29,20 @@ background-repeat: no-repeat;
 
 .take-order__container{
     @media screen and (min-width: 1280px){
-        display: none;   
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
+    
     }  
-}
+
 
 .take-order__title{
     font-family: 'Roboto';
@@ -160,7 +169,8 @@ background-repeat: no-repeat;
     }
 }
 
-.sales__image{
+  .sales__image{
+  
     border-radius: 4px;
     @media screen and (min-width: 1280px){
         border-radius: 6px;  
@@ -169,9 +179,20 @@ background-repeat: no-repeat;
 
 .for-desktop{
     @media screen and (max-width: 1280px){
-        visibility: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
+    
     } 
-}
+
 
 .desktop-right{
     margin-left: auto;
