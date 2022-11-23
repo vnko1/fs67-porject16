@@ -6,3 +6,10 @@
 @import './base/reset';
 @import './base/hidden';
 @import './layout/take-order-dropdown';
+@import './layout/header';
+@import './layout/banners';
+@import './layout/order-forms';
+@import './layout/footer';
+
+@import './components/Modal/modal';
+@import './components/Modal-order/order-modal';

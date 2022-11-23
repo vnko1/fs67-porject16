@@ -1,0 +1,185 @@
+.section-banners {
+  padding-bottom: 48px;
+
+  @include contentMedia($tablet) {
+    padding: 120px 0px;
+  }
+  @include contentMedia($desktop) {
+    z-index: 1;
+    background-image: url(../images/main/background-desk-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/main/background-desk-2x.jpg);
+    }
+  }
+}
+
+.section-banners__img-box {
+  position: relative;
+  margin: 0 auto;
+  width: 100vw;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @include contentMedia($tablet) {
+    width: 768px;
+  }
+
+  @include contentMedia($desktop) {
+    width: 1280px;
+  }
+}
+
+.section-banners__text {
+  position: absolute;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: start;
+  white-space: pre-line;
+  @include contentMedia($tablet) {
+    font-size: 56px;
+    line-height: 1.18;
+  }
+  left: 24px;
+  bottom: 38px;
+  @include contentMedia($tablet) {
+    left: 41px;
+    bottom: 14px;
+  }
+  @include contentMedia($desktop) {
+    left: 345px;
+    bottom: 49px;
+  }
+}
+
+.text-shop-products {
+  @include contentMedia($desktop) {
+    left: 49px;
+  }
+}
+
+.section-banners__text-uppercase {
+  text-transform: uppercase;
+}
+
+.section-banners__text-place {
+  background: linear-gradient(
+    270deg,
+    #1edde0 13.26%,
+    #8bda41 51.01%,
+    #ef001b 107.89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-banners__text-shop {
+  background: linear-gradient(
+    270deg,
+    #03fe8f 23.82%,
+    #ebdcff 57.84%,
+    #ff98f3 102.62%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  @include contentMedia($desktop) {
+    background: linear-gradient(
+      270deg,
+      #03fe8f 4.61%,
+      #ebdcff 57.91%,
+      #ff98f3 92.2%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.section-banners__text-products {
+  background: linear-gradient(
+    270deg,
+    #ffffff 27.78%,
+    #693cf9 61.11%,
+    #f475eb 102.56%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  @include contentMedia($tablet) {
+    background: linear-gradient(
+      270deg,
+      #ffffff 27.78%,
+      #693cf9 66.49%,
+      #f475eb 102.56%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  @include contentMedia($desktop) {
+    background: linear-gradient(
+      270deg,
+      #ffffff 13.26%,
+      #693cf9 60.87%,
+      #f475eb 107.89%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.section-banners__banner {
+  min-width: 100%;
+}
+
+.swiper-pagination.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  width: 104px;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.swiper-wrapper {
+  margin-bottom: 40px;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  opacity: 1;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 50%;
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swiper-pagination-bullet-active {
+  display: inline-block;
+  width: 40px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 30px;
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
