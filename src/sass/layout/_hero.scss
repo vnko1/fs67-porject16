@@ -1,9 +1,9 @@
 .hero__container {
   position: relative;
   overflow: hidden;
-  @include mwContentMedia(480px) {
-    width: 320px;
-  }
+  // @include mwContentMedia(480px) {
+  //   width: 320px;
+  // }
   padding-left: 0;
   padding-right: 0;
   padding-top: 180px + 104px;
@@ -39,6 +39,9 @@
   mix-blend-mode: hard-light;
   opacity: 0.25;
   filter: drop-shadow(0px 3.06266px 19.1416px #5eec36);
+  @include contentMedia($desktop) {
+    filter: drop-shadow(0px 4px 25px #5eec36);
+  }
 }
 
 .icons-1 {
@@ -48,6 +51,12 @@
   right: 16px;
   background-image: url(../icons/vector-8.svg);
   transform: rotate(-180deg);
+  @include contentMedia($desktop) {
+    width: 873px;
+    height: 770px;
+    top: 72px;
+    left: 163px;
+  }
 }
 
 .icons-2 {
@@ -58,6 +67,14 @@
   background-image: url(../icons/vector-10.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
+  @include contentMedia($desktop) {
+    width: 55.86px;
+    height: 150px;
+    top: 344px;
+    right: 389px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
 }
 
 .icons-3 {
@@ -69,6 +86,15 @@
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
   transform: rotate(132.61deg);
+
+  @include contentMedia($desktop) {
+    width: 55.86px;
+    height: 150px;
+    top: 457px;
+    left: 302px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
 }
 .icons-4 {
   width: 153.13px;
@@ -79,6 +105,15 @@
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
   transform: rotate(46.52deg);
+
+  @include contentMedia($desktop) {
+    width: 200px;
+    height: 81.9px;
+    top: 477px;
+    left: 155px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
 }
 
 .icons-5 {
@@ -90,6 +125,15 @@
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
   transform: matrix(0.88, 0.47, 0.47, -0.88, 0, 0);
+
+  @include contentMedia($desktop) {
+    width: 180px;
+    height: 73.71px;
+    top: 183px;
+    left: 676px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
 }
 
 .icons-6 {
@@ -100,6 +144,15 @@
   background-image: url(../icons/vector-9.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
+
+  @include contentMedia($desktop) {
+    width: 331.11px;
+    height: 332.02px;
+    top: 456px;
+    left: 600px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
 }
 
 .icons-7 {
@@ -111,6 +164,15 @@
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
   transform: rotate(-164.06deg);
+
+  @include contentMedia($desktop) {
+    width: 331.11px;
+    height: 332.02px;
+    top: 62px;
+    left: 282px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
 }
 
 .icons-8 {
@@ -121,6 +183,15 @@
   background-image: url(../icons/vector-18.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
+
+  @include contentMedia($desktop) {
+    width: 196.37px;
+    height: 115.46px;
+    bottom: 175.04px;
+    left: 351.84px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
 }
 
 .icons-9 {
@@ -131,6 +202,15 @@
   background-image: url(../icons/vector-13.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
+
+  @include contentMedia($desktop) {
+    width: 310.21px;
+    height: 132.53px;
+    top: 456px;
+    left: 508px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
 }
 
 .icons-10 {
@@ -142,6 +222,15 @@
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
   transform: rotate(-151.36deg);
+
+  @include contentMedia($desktop) {
+    width: 310.21px;
+    height: 132.53px;
+    top: 212px;
+    left: 520px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
 }
 
 .icons-11 {
@@ -152,6 +241,15 @@
   background-image: url(../icons/vector-17.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
+
+  @include contentMedia($desktop) {
+    width: 203px;
+    height: 171px;
+    top: 384px;
+    left: 460px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
 }
 
 .icons-12 {
@@ -161,7 +259,12 @@
   bottom: 118px;
   background-image: url(../icons/vector-23.svg);
   background-color: rgba(123, 227, 74, 0.3);
-  border: 0.765664px solid #7be34a;
+  @include contentMedia($desktop) {
+    width: 53px;
+    height: 47.38px;
+    right: 124px;
+    bottom: 166px;
+  }
 }
 
 .icons-13 {
@@ -171,7 +274,12 @@
   top: 189px;
   background-image: url(../icons/vector-21.svg);
   background-color: rgba(123, 227, 74, 0.3);
-  border: 0.765664px solid #7be34a;
+  @include contentMedia($desktop) {
+    width: 30px;
+    height: 31.28px;
+    right: 308px;
+    bottom: 89px;
+  }
 }
 
 .icons-14 {
@@ -181,8 +289,14 @@
   bottom: 148px;
   background-image: url(../icons/vector-22.svg);
   background: rgba(123, 227, 74, 0.3);
-  border: 0.765664px solid #7be34a;
   transform: rotate(-77.1deg);
+  @include contentMedia($desktop) {
+    width: 25px;
+    height: 22.35px;
+    right: 173px;
+    bottom: 90px;
+    border: 1px solid #7be34a;
+  }
 }
 
 .icons-15 {
@@ -191,9 +305,15 @@
   right: 97px;
   bottom: 74px;
   background-image: url(../icons/vector-24.svg);
+  @include contentMedia($desktop) {
+    width: 56px;
+    height: 61.89px;
+    right: 79px;
+    top: 181px;
+  }
 }
 
-.hero__mouse-container {
+.hero__mouseBg-container {
   position: absolute;
   width: 60px;
   height: 99px;
@@ -212,9 +332,16 @@
     left: 430px;
     transform: rotate(-31.92deg);
   }
+  @include contentMedia($desktop) {
+    width: 133px;
+    height: 220px;
+    top: 175px;
+    left: 588.5px;
+    transform: rotate(-34deg);
+  }
 }
 
-.hero__headphones-container {
+.hero__headphonesBg-container {
   width: 150px;
   height: 186px;
   position: absolute;
@@ -234,9 +361,17 @@
     right: 20px;
     transform: rotate(10.77deg);
   }
+  @include contentMedia($desktop) {
+    width: 270px;
+    height: 335px;
+    right: 150px;
+    top: 290px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(18deg);
+  }
 }
 
-.hero__keyboard-container {
+.hero__keyboardBg-container {
   width: 88px;
   height: 42px;
   position: absolute;
@@ -254,6 +389,15 @@
     bottom: 128px;
     right: 188px;
     transform: rotate(21.68deg);
+
+    @include contentMedia($desktop) {
+      width: 230px;
+      height: 111px;
+      left: 578px;
+      bottom: 122.5px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      transform: rotate(30deg);
+    }
   }
 }
 
@@ -263,6 +407,11 @@
   @include contentMedia($tablet) {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  @include contentMedia($tablet) {
+    padding-left: 142px;
+    padding-right: 142px;
   }
 }
 
@@ -280,11 +429,18 @@
   }
 
   @include contentMedia($tablet) {
-    margin-bottom: 94px;
     max-width: 388px;
+    margin-bottom: 94px;
     font-size: 56px;
     line-height: calc(66 / 56);
     text-align: left;
+  }
+
+  @include contentMedia($desktop) {
+    max-width: 525px;
+    margin-bottom: 40px;
+    font-size: 64px;
+    line-height: calc(75 / 64);
   }
 }
 
@@ -300,10 +456,9 @@
   background-color: #86e543;
   color: $main-bg-color;
   @include contentMedia($tablet) {
-    margin: 0;
     width: 306px;
     height: 70px;
-
+    margin: 0;
     font-size: 32px;
     line-height: calc(38 / 32);
   }
