@@ -1,0 +1,99 @@
+// Andrii Valenko
+
+.contact__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(1);
+  transition: opacity $transition-duration-value $timing-function-value,
+    transform $transition-duration-value $timing-function-value,
+    visibility $transition-duration-value $timing-function-value;
+  overflow-y: scroll;
+  background-color: rgba(0, 20, 20, 0.8);
+
+  &.is-hidden {
+    transform: scaleX(0);
+  }
+  z-index: 1;
+}
+
+.contact__modal {
+  position: absolute;
+  left: 50%;
+  top: 100px + 104px;
+  width: 272px;
+  height: 395px;
+  padding: 20px;
+  transform: translateX(-50%);
+
+  @include contentMedia($tablet) {
+    top: 200px + 136px;
+    width: 688px;
+    height: 524px;
+  }
+
+  @include contentMedia($desktop) {
+    top: 360px + 136px;
+    width: 768px;
+  }
+
+  @include animation(transform);
+  background-color: $main-bg-color;
+
+  .backdrop.is-hidden & {
+    transform: translateX(100%);
+  }
+}
+
+.close-btn {
+  width: 40px;
+  height: 40px;
+  @extend %btn;
+  @extend %flex-centred;
+  margin-left: auto;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  border: 1.5px solid #86e543;
+  @include contentMedia($tablet) {
+    margin-bottom: 28px;
+  }
+}
+
+.modal__text {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  text-align: center;
+
+  @include contentMedia($tablet) {
+    margin-bottom: 80px;
+    font-size: 56px;
+    line-height: calc(66 / 56);
+    & span {
+      display: block;
+    }
+  }
+}
+
+.modal__link {
+  @extend %flex-centred;
+  margin: 0 auto;
+  width: 173px;
+  height: 51px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-transform: uppercase;
+  color: $main-bg-color;
+  background-color: #86e543;
+  border-radius: 16px;
+  @include contentMedia($tablet) {
+    width: 306px;
+    height: 70px;
+    font-size: 32px;
+    line-height: calc(32 / 38);
+  }
+}
