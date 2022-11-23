@@ -36,6 +36,16 @@
   }
 }
 
+@mixin heroRetina($name) {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/main/#{$name}@2x.png);
+    @content;
+  }
+}
+
 @mixin heroBg(
   $folder-first-layer,
   $name-first-layer,
@@ -59,7 +69,7 @@
     url(../images/#{$folder-fourth-layer}/#{$name-fourth-layer}@1x.#{$type-fourth-layer});
 }
 
-@mixin heroRetina(
+@mixin layerRetina(
   $folder-first-layer,
   $name-first-layer,
   $width-first-layer,
