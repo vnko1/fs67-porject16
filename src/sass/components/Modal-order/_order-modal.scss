@@ -58,7 +58,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 36px;
+  gap: 20px;
   margin-top: -30px;
   @include contentMedia(768px) {
     gap: 56px;
@@ -96,15 +96,22 @@
     width: 173px;
     border-radius: 16px;
     background: #86e543;
+    border: transparent;
+
+    @include contentMedia(768px) {
+      width: 306px;
+      font-size: 32px;
+      line-height: 1.18;
+    }
+  }
+  &__link {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.18;
     text-transform: uppercase;
-    border: transparent;
-
+    text-decoration: none;
     color: #01383a;
     @include contentMedia(768px) {
-      width: 306px;
       font-size: 32px;
       line-height: 1.18;
     }

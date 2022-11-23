@@ -88,15 +88,24 @@
     width: 173px;
     border-radius: 16px;
     background: #86e543;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.18;
-    text-transform: uppercase;
+
     border: transparent;
 
     color: #01383a;
     @include contentMedia(768px) {
       width: 306px;
+      font-size: 32px;
+      line-height: 1.18;
+    }
+  }
+  &__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #01383a;
+    @include contentMedia(768px) {
       font-size: 32px;
       line-height: 1.18;
     }
