@@ -158,7 +158,6 @@ a {
 }
 
 .take-order {
-  width: 100%;
   background-image: url(../images/take-order-dropdown/Take-order-mobile-bg-1.jpg);
   background-repeat: no-repeat;
 }
@@ -169,6 +168,7 @@ a {
 }
 @media screen and (min-width: 767px) {
   .take-order {
+    padding-top: 256px;
     background-image: url(../images/take-order-dropdown/Take-order-tablet-bg-1.jpg);
   }
 }
@@ -214,7 +214,7 @@ a {
   }
 }
 
-.desktop__subtitle {
+.subhead {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 32px;
@@ -223,7 +223,7 @@ a {
   color: FFFFFF;
 }
 @media screen and (min-width: 767px) {
-  .desktop__subtitle {
+  .subhead {
     font-size: 56px;
     line-height: 1.18;
     white-space: nowrap;
@@ -231,29 +231,29 @@ a {
   }
 }
 
-.product-img {
+.sales__photo {
   border-radius: 12px;
   width: 100%;
 }
 @media screen and (min-width: 767px) {
-  .product-img {
+  .sales__photo {
     max-width: 387px;
   }
 }
 
-.order-products {
+.desktop__products {
   margin-top: 16px;
   align-items: center;
 }
 @media screen and (min-width: 767px) {
-  .order-products {
+  .desktop__products {
     display: flex;
     flex-wrap: wrap;
     align-items: initial;
   }
 }
 @media screen and (min-width: 1280px) {
-  .order-products {
+  .desktop__products {
     flex-wrap: nowrap;
   }
 }
@@ -337,20 +337,20 @@ a {
   }
 }
 
-.order-headphone:not(:last-child) {
+.sales__item:not(:last-child) {
   margin-right: 16px;
 }
 @media screen and (min-width: 767px) {
-  .order-headphone:not(:last-child) {
+  .sales__item:not(:last-child) {
     margin-right: 24px;
   }
 }
 
-.product-bottom {
+.sales__image {
   border-radius: 4px;
 }
 @media screen and (min-width: 1280px) {
-  .product-bottom {
+  .sales__image {
     border-radius: 6px;
   }
 }
@@ -361,12 +361,13 @@ a {
   }
 }
 
-.right-container {
+.desktop-right {
   margin-left: auto;
 }
 
-.ccc {
+.for-desktop-part {
   display: flex;
+  align-items: flex-end;
 }
 
 .line {
