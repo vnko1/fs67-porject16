@@ -1,34 +1,47 @@
 .take-order{
+    
+    padding-top: 144px;
     background-image: url(../images/take-order-dropdown/Take-order-mobile-bg-1.jpg);
-   
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    background-image: url(../images/take-order-dropdown/Take-order-mobile-bg-2.jpg);
+  }
    
 background-repeat: no-repeat;
-width: 100%;
-@media screen and (min-width: 767px){
 
-    max-width: 768px;
+@media screen and (min-width: 767px){
+    padding-top: 256px;
+    width: 100%;
     background-image: url(../images/take-order-dropdown/Take-order-tablet-bg-1.jpg);}
-    
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    background-image: url(../images/take-order-dropdown/Take-order-tablet-bg-2.jpg);
+  }
 
 @media screen and (min-width: 1280px){
-    max-width: 1280px;
+    
     background-image: url(../images/take-order-dropdown/Take-order-desktop-bg-1.jpg);
 }
-
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    background-image: url(../images/take-order-dropdown/Take-order-desktop-bg-2.jpg);
+  }
 }
 
-
-.desk{
+.order-container{
     @media screen and (min-width: 1280px){
-        display: flex;
-        justify-content: right;
-        
-        
-    }
+        display: none;
+    }  
 }
+
+
+
 
 .order-title{
-    margin-top: 40px;
+    position: relative;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 24px;
@@ -36,14 +49,14 @@ width: 100%;
     letter-spacing: 0.03em;
     color: FFFFFF;
     @media screen and (min-width: 767px){
-        margin-top: 120px;
         margin-left: 59px;
         font-size: 56px;
         line-height: 1.18;
         
-    }
+    }   
 }
 .order-subtitle{
+    
     margin-top: 24px;
     font-family: 'Roboto';
     font-weight: 500;
@@ -59,8 +72,8 @@ width: 100%;
         
         
 }
-
 }
+
 
 .product-img{
     border-radius: 12px;
@@ -68,10 +81,12 @@ width: 100%;
     @media screen and (min-width: 767px){
         margin-right: auto;
         margin-top: 24px;
-        max-width: 387px;
-        
-    }
-}
+        max-width: 387px;}
+        @media screen and (min-width: 1280px){
+            margin-top: 48px;
+            
+     
+}}
 
 .order-products{
     margin-top: 16px;
@@ -98,11 +113,15 @@ width: 100%;
         display: block;
         margin-left: 40px;}
         @media screen and (min-width: 1280px){
+            margin-left: 0px;
             display: flex;
             align-items: center;
-            margin-left: 121px
-
+            justify-content: unset;
+            
+            
+            
         }
+       
         }
 
 .order-old-price{
@@ -119,10 +138,10 @@ width: 100%;
         font-size: 24px;
     }
     @media screen and (min-width: 1280px){
-        font-size: 24px;
-        margin-top: 0;
+        margin-top: 32px;
         margin-right: 70px;
     }
+    
 }
 
 .order-new-price{
@@ -139,20 +158,21 @@ width: 100%;
         font-size: 48px;
     }
     @media screen and (min-width: 1280px){
-        margin: 0;
-    }
-}
+        margin-top: 32px;
+        
+    }}
+
 .sale{
     display: flex;
     align-items: center;
     margin-top: 16px;
     @media screen and (min-width: 767px){
         margin-top: 24px;
+        @media screen and (min-width: 1280px){
+            margin-top: 40px;
+        }
     }
-    @media screen and (min-width: 1280px){
-        margin-top: 40px;
-        margin-left: auto;
-    }
+    
     
 }
 
@@ -170,3 +190,70 @@ width: 100%;
     }
  }
 
+.for-desktop{
+    @media screen and (max-width: 1280px){
+        visibility: hidden;
+    } 
+}
+
+.right-container{
+    margin-left: auto;
+    
+}
+.ccc{
+    display: flex;
+}
+  
+  .top-line-container {
+    position: absolute;
+    top: 30px;
+    display: flex;
+    @media screen and (min-width: 768px) {
+      top: 58px;
+    }
+  }
+  .top-line {
+    height: 8px;
+  }
+  .top-left-part {
+    width: 50vw;
+    @media screen and (min-width: 1280px) {
+      width: 30vw;
+    }
+    border-bottom: 1px solid #7be34a;
+    border-right: 0.5px solid #7be34a;
+  }
+  .top-right-part {
+    width: 100vw;
+    border-top: 1px solid #7be34a;
+    border-left: 0.5px solid #7be34a;
+  }
+  
+  .bottom-line-container {
+    position: absolute;
+    top: 36px;
+    display: flex;
+    @media screen and (min-width: 768px) {
+      top: 64px;
+    }
+  }
+  .bottom-line {
+    height: 8px;
+  }
+  .bottom-left-part {
+    width: 51vw;
+    @media screen and (min-width: 768px) {
+      width: 51.2vw;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 30.6vw;
+    }
+    border-bottom: 1px solid #28780d;
+    border-right: 0.5px solid #28780d;
+  }
+  
+  .bottom-right-part {
+    width: 100vw;
+    border-top: 1px solid #28780d;
+    border-left: 0.5px solid #28780d;
+  }
