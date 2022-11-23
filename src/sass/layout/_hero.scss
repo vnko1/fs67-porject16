@@ -49,7 +49,7 @@
   height: 590px;
   top: 176px;
   right: 16px;
-  background-image: url(../icons/vector-8.svg);
+  background-image: url(../icons/main/vector-8.svg);
   transform: rotate(-180deg);
   @include contentMedia($desktop) {
     width: 873px;
@@ -64,7 +64,7 @@
   height: 115px;
   top: 384px;
   right: 128px;
-  background-image: url(../icons/vector-10.svg);
+  background-image: url(../icons/main/vector-10.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
   @include contentMedia($desktop) {
@@ -82,7 +82,7 @@
   height: 115px;
   top: 471px;
   left: 189px;
-  background-image: url(../icons/vector-15.svg);
+  background-image: url(../icons/main/vector-15.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
   transform: rotate(132.61deg);
@@ -101,7 +101,7 @@
   height: 62.71px;
   top: 487px;
   left: 77px;
-  background-image: url(../icons/vector-11.svg);
+  background-image: url(../icons/main/vector-11.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
   transform: rotate(46.52deg);
@@ -121,7 +121,7 @@
   height: 56.44px;
   top: 125.65px + 136px;
   right: 144px;
-  background-image: url(../icons/vector-16.svg);
+  background-image: url(../icons/main/vector-16.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
   transform: matrix(0.88, 0.47, 0.47, -0.88, 0, 0);
@@ -141,7 +141,7 @@
   height: 254.21px;
   right: 140px;
   top: 470.67px;
-  background-image: url(../icons/vector-9.svg);
+  background-image: url(../icons/main/vector-9.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
 
@@ -160,7 +160,7 @@
   height: 254.21px;
   top: 169px;
   left: 173px;
-  background-image: url(../icons/vector-12.svg);
+  background-image: url(../icons/main/vector-12.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
   transform: rotate(-164.06deg);
@@ -180,7 +180,7 @@
   height: 88.41px;
   left: 227px;
   bottom: 122px;
-  background-image: url(../icons/vector-18.svg);
+  background-image: url(../icons/main/vector-18.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
 
@@ -199,7 +199,7 @@
   height: 101.48px;
   bottom: 232px;
   right: 183px;
-  background-image: url(../icons/vector-13.svg);
+  background-image: url(../icons/main/vector-13.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
 
@@ -218,7 +218,7 @@
   height: 101.48px;
   top: 284px;
   right: 200px;
-  background-image: url(../icons/vector-14.svg);
+  background-image: url(../icons/main/vector-14.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
   transform: rotate(-151.36deg);
@@ -238,7 +238,7 @@
   height: 130.93px;
   top: 415px;
   right: 302px;
-  background-image: url(../icons/vector-17.svg);
+  background-image: url(../icons/main/vector-17.svg);
   box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
   filter: blur(1.91416px);
 
@@ -257,7 +257,7 @@
   height: 17.11px;
   left: 96px;
   bottom: 118px;
-  background-image: url(../icons/vector-23.svg);
+  background-image: url(../icons/main/vector-23.svg);
   background-color: rgba(123, 227, 74, 0.3);
   @include contentMedia($desktop) {
     width: 53px;
@@ -272,7 +272,7 @@
   height: 27.94px;
   left: 64px;
   top: 189px;
-  background-image: url(../icons/vector-21.svg);
+  background-image: url(../icons/main/vector-21.svg);
   background-color: rgba(123, 227, 74, 0.3);
   @include contentMedia($desktop) {
     width: 30px;
@@ -287,7 +287,7 @@
   height: 23.95px;
   right: 66px;
   bottom: 148px;
-  background-image: url(../icons/vector-22.svg);
+  background-image: url(../icons/main/vector-22.svg);
   background: rgba(123, 227, 74, 0.3);
   transform: rotate(-77.1deg);
   @include contentMedia($desktop) {
@@ -304,7 +304,7 @@
   height: 47.39px;
   right: 97px;
   bottom: 74px;
-  background-image: url(../icons/vector-24.svg);
+  background-image: url(../icons/main/vector-24.svg);
   @include contentMedia($desktop) {
     width: 56px;
     height: 61.89px;
