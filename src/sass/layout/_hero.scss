@@ -1,5 +1,6 @@
 .hero__container {
   position: relative;
+  overflow: hidden;
   @include mwContentMedia(480px) {
     width: 320px;
   }
@@ -7,19 +8,25 @@
   padding-right: 0;
   padding-top: 180px + 104px;
   padding-bottom: 127px;
-  background-image: url(../images/main/heroBg@1x.jpg);
-  @include heroRetina(heroBg, jpg);
+  @include mwContentMedia($desktop) {
+    background-image: url(../images/main/heroBg@1x.jpg);
+    @include heroRetina(heroBg, jpg);
+  }
   background-size: cover;
   background-position: right -140px top 0;
   background-repeat: no-repeat;
   @include contentMedia($tablet) {
     padding-top: 154px + 136px;
     padding-bottom: 208px;
-    background-image: url(../images/main/heroBg@1x.jpg);
     background-size: 150%;
     background-position: left 55% top 70px;
   }
-  overflow: hidden;
+
+  @include contentMedia($desktop) {
+    padding-top: 150px + 136px;
+    padding-bottom: 209px;
+    background-size: contain;
+  }
 }
 
 .hero__icons {
