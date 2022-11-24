@@ -58,6 +58,7 @@
       @include font(600, 56px, 1.00, null);
       width: 688px;
       height: 112px;
+      margin-bottom: 60px;
     }
     @include desktop {
       @include font(600, 56px, 1.00, null);
@@ -251,11 +252,11 @@
   .top-icon-container {
     position: absolute;
     left: 0;
-    top: 310px;
+    top: 240px;
     display: flex;
   
     @media screen and (min-width: 768px) {
-      top: 440px;
+      top: 300px;
     }
   }
   
@@ -268,57 +269,57 @@
   }
   
   .top-left-side {
-    width: 58vw;
+    width: 25vw;
     border-bottom: 1px solid #7be34a;
     border-right: 0.5px solid #7be34a;
   
     @media screen and (min-width: 480px) {
-      width: 55vw;
+      width: 25vw;
     }
   
     @media screen and (min-width: 768px) {
-      width: 69vw;
+      width: 35vw;
     }
   
-    @media screen and (min-width: 1280px) {
-      width: 42vw;
+    @media screen and (max-width: 1280px) {
+      width: 20vw;
     }
   
     @media screen and (min-width: 1450px) {
-      width: 44vw;
+      width: 20vw;
     }
   }
   
   .top-right-side {
-    width: 42vw;
+    width: 75vw;
     border-top: 1px solid #7be34a;
     border-left: 0.5px solid #7be34a;
   
     @media screen and (min-width: 480px) {
-      width: 45vw;
+      width: 75vw;
     }
   
     @media screen and (min-width: 768px) {
-      width: 31vw;
+      width: 65vw;
     }
   
-    @media screen and (min-width: 1280px) {
-      width: 58vw;
+    @media screen and (max-width: 1280px) {
+      width: 80vw;
     }
   
     @media screen and (min-width: 1450px) {
-      width: 56vw;
+      width: 80vw;
     }
   }
   
   .bottom-icon-container {
     position: absolute;
     left: 0;
-    top: 313px;
+    top: 244px;
     display: flex;
   
     @media screen and (min-width: 768px) {
-      top: 448px;
+      top: 304px;
     }
   }
   
@@ -331,46 +332,46 @@
   }
   
   .bottom-left-side {
-    width: 59vw;
+    width: 26vw;
     border-bottom: 1px solid #28780d;
     border-right: 0.5px solid #28780d;
   
     @media screen and (min-width: 480px) {
-      width: 55.7vw;
+      width: 26vw;
     }
   
     @media screen and (min-width: 768px) {
-      width: 70vw;
+      width: 36vw;
     }
   
-    @media screen and (min-width: 1280px) {
-      width: 42.6vw;
+    @media screen and (max-width: 1280px) {
+      width: 20.5vw;
     }
   
     @media screen and (min-width: 1450px) {
-      width: 44.6vw;
+      width: 21vw;
     }
   }
   
   .bottom-right-side {
-    width: 41vw;
+    width: 74vw;
     border-top: 1px solid #28780d;
     border-left: 0.5px solid #28780d;
   
     @media screen and (min-width: 480px) {
-      width: 44.3vw;
+      width: 74vw;
     }
   
     @media screen and (min-width: 768px) {
-      width: 30vw;
+      width: 64vw;
     }
   
-    @media screen and (min-width: 1280px) {
-      width: 57.4vw;
+    @media screen and (max-width: 1280px) {
+      width: 79.5vw;
     }
   
     @media screen and (min-width: 1450px) {
-      width: 54.4vw;
+      width: 79vw;
     }
   }
   
