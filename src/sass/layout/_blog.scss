@@ -215,7 +215,7 @@
   width: 16px;
   height: 16px;
   border-radius: 30px;
-  background: #ffffff;
+  background: $main-font-color;
   position: absolute;
   animation-duration: 2.5s;
   animation-timing-function: ease;
@@ -226,7 +226,6 @@
   width: 40px;
   height: 16px;
   border-radius: 30px;
-  transition: width 0.5s ease, border-radius 0.5s ease;
 }
 
 .dot2 {
@@ -234,21 +233,10 @@
   height: 16px;
   opacity: 1;
   border-radius: 50%;
-  transition: width 0.5s ease, border-radius 0.5s ease;
 }
 
 .dot3 {
   left: 1.5em;
-}
-
-@keyframes reveal {
-  from {
-    transform: scalex(1);
-  }
-
-  to {
-    transform: scalex(1);
-  }
 }
 
 @keyframes slide {
