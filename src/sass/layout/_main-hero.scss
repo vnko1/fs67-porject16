@@ -59,16 +59,16 @@
         background-size: cover;
         background-position: center;
         background-image:
-            url('../images/main/hero-desk1-1x.png'),
-            url('../images/main/hero-desk2-1x.png');
+            url('../images/main/hero-vector-desk1-1x.png'),
+            url('../images/main/hero-bg-desk1-1x.png');
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (-webkit-min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             background-image:
-                url('../images/main/hero-desk1-2x.png'),
-                url('../images/main/hero-desk2-2x.png');
+                url('../images/main/hero-vector-desk2-2x.png'),
+                url('../images/main/hero-bg-desk2-2x.png');
         }
     }
 }
