@@ -7,8 +7,13 @@
 @import './base/hidden';
 @import './layout/header';
 
+@import './layout/contact';
 @import './layout/banners';
 @import './layout/accessories';
+@import './layout/take-order-dropdown';
 @import './layout/order-forms';
 @import './layout/blog-article';
 @import './layout/footer';
+
+@import './components/modal-order/modal-order';
+@import './components/modal-order/modal-order-2';
