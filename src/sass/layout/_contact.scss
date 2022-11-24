@@ -7,7 +7,7 @@ $header-height: 136px;
   padding: 40px + $header-height-mob 0 48px+401px;
 
   @media screen and (min-width: $tablet) {
-    padding: 120px + $header-height 0 120px+215px;
+    padding: 120px + $header-height 0 120px;
 
     background-image: url(../images/contact/bg-tab.jpg);
     background-repeat: no-repeat;
@@ -54,11 +54,11 @@ $header-height: 136px;
   border-right: 0.5px solid #7be34a;
 
   @media screen and (min-width: 480px) {
-    width: 35vw;
+    width: 44vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 69vw;
+    width: 41vw;
   }
 
   @media screen and (min-width: 1280px) {
@@ -76,11 +76,11 @@ $header-height: 136px;
   border-left: 0.5px solid #7be34a;
 
   @media screen and (min-width: 480px) {
-    width: 65vw;
+    width: 56vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 31vw;
+    width: 59vw;
   }
 
   @media screen and (min-width: 1280px) {
@@ -112,16 +112,16 @@ $header-height: 136px;
 }
 
 .abottom-left-part {
-  width: 59vw;
+  width: 38.6vw;
   border-bottom: 1px solid #28780d;
   border-right: 0.5px solid #28780d;
 
   @media screen and (min-width: 480px) {
-    width: 55.7vw;
+    width: 44.6vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 70vw;
+    width: 41.6vw;
   }
 
   @media screen and (min-width: 1280px) {
@@ -134,16 +134,16 @@ $header-height: 136px;
 }
 
 .abottom-right-part {
-  width: 41vw;
+  width: 61.4vw;
   border-top: 1px solid #28780d;
   border-left: 0.5px solid #28780d;
 
   @media screen and (min-width: 480px) {
-    width: 44.3vw;
+    width: 55.4vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 30vw;
+    width: 58.4vw;
   }
 
   @media screen and (min-width: 1280px) {
@@ -151,7 +151,7 @@ $header-height: 136px;
   }
 
   @media screen and (min-width: 1450px) {
-    width: 54.4vw;
+    width: 55.4vw;
   }
 }
 
