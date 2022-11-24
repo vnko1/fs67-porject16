@@ -12,9 +12,40 @@
         <div class="bottom-icon bottom-left-side"></div>
         <div class="bottom-icon bottom-right-side"></div>
       </div>
+    </div>
+      <div class="picture-mobile">
+        <picture>
+          <source
+            srcset="
+              ./images/article/blog-article-desctop_1x.jpg 1x,
+              ./images/article/blog-article-desctop_2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/article/blog-article-tablet_1x.jpg 1x,
+              ./images/article/blog-article-tablet_2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/article/blog-article-mobile_1x.jpg 1x,
+              ./images/article/blog-article-mobile_2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/article/blog-article-desctop_1x.jpg"
+            alt="Rectangle"
+            width="387"
+          />
+        </picture>
+      </div>
       <div class="top-info">
         <div class="top-info-box">
-          <div class="container picture">
+          <div class="picture">
             <picture>
               <source
                 srcset="
@@ -68,7 +99,7 @@
           </p>
         </div>
       </div>
-      <div class="top-info-desctop">
+      <div class="container top-info-desctop">
         <div class="top-text-title__title">
           <h2 class="top-text__title">By Ray Ian Ampoloquio</h2>
           <h2 class="top-text__date">Updated on September 21, 2022</h2>
@@ -179,6 +210,5 @@
           and headphones.
         </p>
       </div>
-    </div>
   </section>
 </article>
