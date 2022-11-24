@@ -1,4 +1,9 @@
 .take-order{
+    position: relative;
+    padding-top: 144px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   
     background-image: url(../images/take-order-dropdown/Take-order-mobile-bg-1.jpg);
     @media (min-device-pixel-ratio: 2),
@@ -6,10 +11,8 @@
   (min-resolution: 2dppx){
     background-image: url(../images/take-order-dropdown/Take-order-mobile-bg-2.jpg);
   }
-   
-background-repeat: no-repeat;
-
 @media screen and (min-width: 767px){
+    padding-top: 256px;
     background-image: url(../images/take-order-dropdown/Take-order-tablet-bg-1.jpg);}
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -18,6 +21,7 @@ background-repeat: no-repeat;
   }
 
 @media screen and (min-width: 1280px){
+    background-size: cover;
     background-image: url(../images/take-order-dropdown/Take-order-desktop-bg-1.jpg);
 }
 @media (min-device-pixel-ratio: 2),
@@ -28,6 +32,14 @@ background-repeat: no-repeat;
 }
 
 .take-order__container{
+    max-width: 320px;
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+    }
+  
+    @media screen and (min-width:1280px) {
+        max-width: 1280px;
+    }
     @media screen and (min-width: 1280px){
       position: absolute;
       white-space: nowrap;
@@ -43,14 +55,15 @@ background-repeat: no-repeat;
     
     }  
 
-
+    
 .take-order__title{
+    position: relative;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
     color: FFFFFF;
-    @media screen and (min-width: 767px){
+    @media screen and (min-width: 768px){
         font-size: 56px;
         line-height: 1.18;
         margin-left: 59px;
@@ -61,31 +74,36 @@ background-repeat: no-repeat;
     }
 }
 .subhead{
+    margin-top: 35px;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 32px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: FFFFFF;
-    @media screen and (min-width: 767px){
+    @media screen and (min-width: 768px){
+        margin-top: 51px;
         font-size: 56px;
         line-height: 1.18;
         white-space: nowrap;
         letter-spacing: 0em;       
+}
+@media screen and (min-width: 1280px){
+    margin: 0;
 }
 }
 
 .sales__photo{
     border-radius: 12px;
     width: 100%;
-    @media screen and (min-width: 767px){
+    @media screen and (min-width: 768px){
         max-width: 387px;}
         }
 
-.desktop__products{
+.mobile-tablet__products{
     margin-top: 16px;
     align-items: center;
-    @media screen and (min-width: 767px){
+    @media screen and (min-width: 768px){
     display: flex;
     flex-wrap: wrap;
     align-items: initial;
@@ -99,7 +117,7 @@ background-repeat: no-repeat;
 .price{
     display: flex;
     justify-content: space-between;
-    @media screen and (min-width: 767px){
+    @media screen and (min-width: 768px){
         display: block;
         margin-left: 40px;}
         @media screen and (min-width: 1280px){
@@ -116,12 +134,12 @@ background-repeat: no-repeat;
     margin-top: 16px;
     text-decoration: line-through;
     font-family: 'Roboto';
-    font-style: 500;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1;
     letter-spacing: 0.03em;
     color: #8D9289;
-    @media screen and (min-width: 767px){
+    @media screen and (min-width: 768px){
         margin-top: 93px;
         font-size: 24px;
     }
@@ -141,7 +159,7 @@ background-repeat: no-repeat;
     line-height: 1;
     letter-spacing: 0.03em;
     color: #86E543; 
-    @media screen and (min-width: 767px){
+    @media screen and (min-width: 768px){
         margin-top: 56px;
         font-size: 48px;
     }
@@ -154,7 +172,7 @@ background-repeat: no-repeat;
     display: flex;
     align-items: center;
     margin-top: 16px;
-    @media screen and (min-width: 767px){
+    @media screen and (min-width: 768px){
         margin-top: 24px;
         @media screen and (min-width: 1280px){
             margin-top: 40px;
@@ -164,13 +182,12 @@ background-repeat: no-repeat;
 
 .sales__item:not(:last-child){
     margin-right: 16px;
-    @media screen and (min-width: 767px){
+    @media screen and (min-width: 768px){
         margin-right: 24px;
     }
 }
 
   .sales__image{
-  
     border-radius: 4px;
     @media screen and (min-width: 1280px){
         border-radius: 6px;  
@@ -190,7 +207,6 @@ background-repeat: no-repeat;
       clip-path: inset(50%);
       margin: -1px;
     }
-    
     } 
 
 
@@ -200,85 +216,119 @@ background-repeat: no-repeat;
 }
 .for-desktop-part{
     display: flex;
-    align-items: flex-end;
+    margin-top: 75px;
     
 }
 
-.line {
-  display: flex;
-  width: 100%;
+.top-line-container {
+    position: absolute;
+    left: 0;
+    top: 172px;
+    display: flex;
   
-  &:last-child {
-      margin-bottom: 20px;
-  }
-  @media screen and (min-width: 768px) {
-      &:last-child {
-          margin-bottom: 40px;
-      }
-  }
-
-  @media screen and (min-width: 1280px) {
-      &:last-child {
-          margin-bottom: 48px;
-      }
-  }
-
-}
-
-.line__super-line1 {
-  width: 250px;
-  height: 8px;
-  border: 1px solid #7BE34A;
-  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
-  border-left: transparent;
-  border-top: transparent;
-  margin-left: -15px;
-  @media screen and (min-width: 768px) {
-    width: 840px;
-}
-  @media screen and (min-width: 1280px) {
-      width: 600px;
-  }
-}
-
-.line__super-line2 {
-
-  width: 100%;
-  height: 1px;
-  border: 1px solid #7BE34A;
-  border-left: transparent;
-  border-top: transparent;
-  margin-bottom: 3px;
-  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
-  margin-right: -15px;
-}
-
-.line__super-line3 {
-  width: 260px;
-  height: 8px;
-  border: 1px solid #28780D;
-  border-left: transparent;
-  border-top: transparent;
-  margin-left: -15px;
-  margin-top: -4px;
-  box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
-  
-  @media screen and (min-width: 768px) {
-          width: 850px;
-      }
-      @media screen and (min-width: 1280px) {
-        width: 600px;
+    @media screen and (min-width: 768px) {
+        top: 322px;
     }
-}
-
-.line__super-line4{
-  width: 100%;
-  height: 1px;
-  border: 1px solid #28780D;
-  border-left: transparent;
-  border-top: transparent;
-  margin-top: -4px;
-  margin-bottom: 48px;
-  box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
-  margin-right: -15px;
-}
+  }
+  
+  .top-line {
+    height: 8px;
+  
+    @media screen and (min-width: 768px) {
+        height: 19px;
+    }
+  }
+  
+  .top-left-part {
+    width: 58vw;
+    border-bottom: 1px solid #7be34a;
+    border-right: 0.5px solid #7be34a;
+  
+    @media screen and (min-width: 480px) {
+        width: 55vw;
+    }
+  
+    @media screen and (min-width: 768px) {
+        width: 56vw;
+    }
+  
+    @media screen and (min-width: 1280px) {
+        width: 34vw;
+    }
+  
+  }
+  
+  .top-right-part {
+    width: 42vw;
+    border-top: 1px solid #7be34a;
+    border-left: 0.5px solid #7be34a;
+  
+  
+    @media screen and (min-width: 480px) {
+        width: 45vw;
+    }
+  
+    @media screen and (min-width: 768px) {
+        width: 44vw;
+    }
+  
+    @media screen and (min-width: 1280px) {
+        width: 68vw;
+    }
+  }
+  
+  .bottom-line-container {
+    position: absolute;
+    left: 0;
+    top: 176px;
+    display: flex;
+  
+    @media screen and (min-width: 768px) {
+        top: 330px;
+    }
+  }
+  
+  .bottom-line {
+    height: 8px;
+  
+    @media screen and (min-width: 768px) {
+        height: 19px;
+    }
+  }
+  
+  .bottom-left-part {
+    width: 59vw;
+    border-bottom: 1px solid #28780d;
+    border-right: 0.5px solid #28780d;
+  
+    @media screen and (min-width: 480px) {
+        width: 55.7vw;
+    }
+  
+    @media screen and (min-width: 768px) {
+        width: 57vw;
+    }
+  
+    @media screen and (min-width: 1280px) {
+        width: 34.6vw;
+    }
+  
+  }
+  
+  .bottom-right-part {
+    width: 41vw;
+    border-top: 1px solid #28780d;
+    border-left: 0.5px solid #28780d;
+  
+    @media screen and (min-width: 480px) {
+        width: 44.3vw;
+    }
+  
+    @media screen and (min-width: 768px) {
+        width: 43vw;
+    }
+  
+    @media screen and (min-width: 1280px) {
+        width: 66.4vw;
+    }
+  }
