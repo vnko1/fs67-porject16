@@ -283,22 +283,18 @@
 
   &__item {
     &:nth-child(n + 2) {
-      animation-name: scale;
-      animation-duration: 2s;
+      animation-name: translating;
+      animation-duration: 1000ms;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
 
-      @keyframes scale {
+      @keyframes translating {
         0% {
-          transform: scale(0.3);
-        }
-
-        50% {
-          transform: scale(1);
+          transform: translateX(-200%);
         }
 
         100% {
-          transform: scale(0.3);
+          transform: translateX(50%);
         }
       }
     }
