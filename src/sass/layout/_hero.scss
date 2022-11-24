@@ -1,3 +1,18 @@
+.hero {
+  @include mwContentMedia($desktop) {
+    background-image: url(../images/main/heroBg@1x.jpg);
+    @include heroRetina(heroBg, jpg);
+  }
+  background-size: cover;
+  background-position: right -140px top 0;
+  background-repeat: no-repeat;
+
+  @include contentMedia($tablet) {
+    background-size: 150%;
+    background-position: 50%;
+  }
+}
+
 .hero__container {
   position: relative;
   overflow: hidden;
@@ -8,13 +23,13 @@
   padding-right: 0;
   padding-top: 180px + 104px;
   padding-bottom: 127px;
-  @include mwContentMedia($desktop) {
-    background-image: url(../images/main/heroBg@1x.jpg);
-    @include heroRetina(heroBg, jpg);
-  }
-  background-size: cover;
-  background-position: right -140px top 0;
-  background-repeat: no-repeat;
+  // @include mwContentMedia($desktop) {
+  //   background-image: url(../images/main/heroBg@1x.jpg);
+  //   @include heroRetina(heroBg, jpg);
+  // }
+  // background-size: cover;
+  // background-position: right -140px top 0;
+  // background-repeat: no-repeat;
   @include contentMedia($tablet) {
     padding-top: 154px + 136px;
     padding-bottom: 208px;
@@ -409,7 +424,7 @@
     padding-right: 40px;
   }
 
-  @include contentMedia($tablet) {
+  @include contentMedia($desktop) {
     padding-left: 142px;
     padding-right: 142px;
   }
