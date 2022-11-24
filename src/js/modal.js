@@ -23,7 +23,7 @@
   refs.openOrderBtn.addEventListener('click', toggleOrder);
   refs.closeOrderBtn.addEventListener('click', toggleOrder);
 
-  function toggleModal() {
+  function toggleOrder() {
     document.body.classList.toggle('order-open');
     refs.order.classList.toggle('is-hidden');
   }
