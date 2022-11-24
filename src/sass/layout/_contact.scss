@@ -1,8 +1,13 @@
+$header-height-mob: 104px;
+$header-height: 136px;
+
 .contacts {
-  padding: 40px+104px 0 48px+401px;
+  position: relative;
+
+  padding: 40px + $header-height-mob 0 48px+401px;
 
   @media screen and (min-width: $tablet) {
-    padding: 120px+136px 0 120px+215px;
+    padding: 120px + $header-height 0 120px+215px;
 
     background-image: url(../images/contact/bg-tab.jpg);
     background-repeat: no-repeat;
@@ -21,6 +26,136 @@
     }
   }
 }
+
+// -------------------------------------------------
+
+.atop-line-container {
+  position: absolute;
+  left: 0;
+  top: 68px + $header-height-mob;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    top: 186px + $header-height;
+  }
+}
+
+.atop-line {
+  height: 8px;
+
+  @media screen and (min-width: 768px) {
+    height: 19px;
+  }
+}
+
+.atop-left-part {
+  width: 38vw;
+  border-bottom: 1px solid #7be34a;
+  border-right: 0.5px solid #7be34a;
+
+  @media screen and (min-width: 480px) {
+    width: 35vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 69vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 42vw;
+  }
+
+  @media screen and (min-width: 1450px) {
+    width: 44vw;
+  }
+}
+
+.atop-right-part {
+  width: 42vw;
+  border-top: 1px solid #7be34a;
+  border-left: 0.5px solid #7be34a;
+
+  @media screen and (min-width: 480px) {
+    width: 45vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 31vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 58vw;
+  }
+
+  @media screen and (min-width: 1450px) {
+    width: 56vw;
+  }
+}
+
+.abottom-line-container {
+  position: absolute;
+  left: 0;
+  top: 72px + $header-height-mob;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    top: 194px + $header-height;
+  }
+}
+
+.abottom-line {
+  height: 8px;
+
+  @media screen and (min-width: 768px) {
+    height: 19px;
+  }
+}
+
+.abottom-left-part {
+  width: 59vw;
+  border-bottom: 1px solid #28780d;
+  border-right: 0.5px solid #28780d;
+
+  @media screen and (min-width: 480px) {
+    width: 55.7vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 70vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 42.6vw;
+  }
+
+  @media screen and (min-width: 1450px) {
+    width: 44.6vw;
+  }
+}
+
+.abottom-right-part {
+  width: 41vw;
+  border-top: 1px solid #28780d;
+  border-left: 0.5px solid #28780d;
+
+  @media screen and (min-width: 480px) {
+    width: 44.3vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 30vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 57.4vw;
+  }
+
+  @media screen and (min-width: 1450px) {
+    width: 54.4vw;
+  }
+}
+
+// -------------------------------------------------
 
 .contacts__title {
   margin-bottom: 35px;
