@@ -39,3 +39,9 @@
 @mixin calc($gap, $quantity) {
   width: calc((100% - ($gap * ($quantity - 1))) / $quantity);
 }
+
+@mixin font ($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: calc($lh / $fs);
+}
