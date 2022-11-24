@@ -1,6 +1,7 @@
 .take-order {
   position: relative;
   padding-top: 144px;
+  padding-bottom: 32px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -13,6 +14,7 @@
   }
   @media screen and (min-width: 768px) {
     padding-top: 256px;
+    padding-bottom: 48px;
     background-image: url(../images/order/take-order-tablet-bg-1.jpg);
   }
   @media (min-device-pixel-ratio: 2),
@@ -264,7 +266,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 68vw;
+    width: 66vw;
   }
 }
 
@@ -319,6 +321,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 67.4vw;
+    width: 65.4vw;
   }
 }
