@@ -248,6 +248,134 @@
   }
 
 
+  .top-icon-container {
+    position: absolute;
+    left: 0;
+    top: 310px;
+    display: flex;
+  
+    @media screen and (min-width: 768px) {
+      top: 440px;
+    }
+  }
+  
+  .top-icon {
+    height: 8px;
+  
+    @media screen and (min-width: 768px) {
+      height: 19px;
+    }
+  }
+  
+  .top-left-side {
+    width: 58vw;
+    border-bottom: 1px solid #7be34a;
+    border-right: 0.5px solid #7be34a;
+  
+    @media screen and (min-width: 480px) {
+      width: 55vw;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 69vw;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      width: 42vw;
+    }
+  
+    @media screen and (min-width: 1450px) {
+      width: 44vw;
+    }
+  }
+  
+  .top-right-side {
+    width: 42vw;
+    border-top: 1px solid #7be34a;
+    border-left: 0.5px solid #7be34a;
+  
+    @media screen and (min-width: 480px) {
+      width: 45vw;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 31vw;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      width: 58vw;
+    }
+  
+    @media screen and (min-width: 1450px) {
+      width: 56vw;
+    }
+  }
+  
+  .bottom-icon-container {
+    position: absolute;
+    left: 0;
+    top: 313px;
+    display: flex;
+  
+    @media screen and (min-width: 768px) {
+      top: 448px;
+    }
+  }
+  
+  .bottom-icon {
+    height: 8px;
+  
+    @media screen and (min-width: 768px) {
+      height: 19px;
+    }
+  }
+  
+  .bottom-left-side {
+    width: 59vw;
+    border-bottom: 1px solid #28780d;
+    border-right: 0.5px solid #28780d;
+  
+    @media screen and (min-width: 480px) {
+      width: 55.7vw;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 70vw;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      width: 42.6vw;
+    }
+  
+    @media screen and (min-width: 1450px) {
+      width: 44.6vw;
+    }
+  }
+  
+  .bottom-right-side {
+    width: 41vw;
+    border-top: 1px solid #28780d;
+    border-left: 0.5px solid #28780d;
+  
+    @media screen and (min-width: 480px) {
+      width: 44.3vw;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 30vw;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      width: 57.4vw;
+    }
+  
+    @media screen and (min-width: 1450px) {
+      width: 54.4vw;
+    }
+  }
+  
+
+
 
 
 
