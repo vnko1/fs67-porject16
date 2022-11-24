@@ -1,9 +1,8 @@
-.main-article {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+
 
 .blog-article {
+    padding-top: 144px;
+    padding-bottom: 48px;
     background-color: #01383A;
     background-image: url(../images/article/blog-article-bg-mobile_1x.jpg);
     background-repeat: no-repeat;
@@ -17,6 +16,7 @@
   }
 }
     @include tablet {
+      padding-bottom: 120px;
       background-image: url(../images/article/blog-article-bg-tablet_1x.jpg);
       @include retina-device {
       .box {
@@ -25,6 +25,7 @@
     }
   }
     @include desktop {
+      padding-bottom: 120px;
       background-image: url(../images/article/blog-article-bg-desctop_1x.jpg);
       @include retina-device {
       .box {
@@ -65,22 +66,6 @@
     }
     text-align: left;
     color: #FFFFFF;
-  }
-
-  .blog-article__icon--top {
-    width: 100%;
-    color: #7BE34A;
-    border: 1px solid #7BE34A;
-    box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
-    margin-bottom: 3px;
-  }
-
-  .blog-article__icon--bottom {
-    width: 100%;
-    color: #28780D;
-    border: 1px solid #28780D;
-    box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
-    margin-bottom: 20px;
   }
 
   .top-info {
@@ -128,7 +113,7 @@
     @include desktop {
       max-width: 690px;
       margin-right: 0;
-      margin-top: 35px;
+      margin-top: 24px;
     }
 }
 
@@ -145,7 +130,6 @@
     flex-direction: column;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 24px;
     }
 }
 
@@ -180,7 +164,6 @@
         @include font(400, 24px, 1.16, null);
         color: #8D9289;
         width: 347px;
-        margin-right: 40px;
         margin-left: 96px;
       }
   }
@@ -205,6 +188,9 @@
     @include tablet {
       max-width: 688px;
     }
+    @include desktop {
+      max-width: 1200px;
+    }
   }
 
   .checklist__top-text {
@@ -217,6 +203,11 @@
       } 
       @include tablet {
         @include font(600, 24px, 1.16, null);
+        color: #86E543;
+        max-width: 1200px;
+      }
+      @include tablet {
+        @include font(400, 24px, 1.16, null);
         color: #86E543;
         max-width: 1200px;
       }
@@ -250,7 +241,7 @@
         max-width: 688px;
       } 
     @include desktop {
-        @include font(600, 24px, 1.16, null);
+        @include font(400, 24px, 1.16, null);
         max-width: 1200px;
       } 
       
