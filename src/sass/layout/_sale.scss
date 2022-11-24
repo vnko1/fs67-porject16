@@ -121,7 +121,7 @@
   }
 }
 
-.top-line-container {
+.sale__top-line-container {
   position: absolute;
   left: 0;
   top: 30px;
@@ -132,7 +132,7 @@
   }
 }
 
-.top-line {
+.sale__top-line {
   height: 8px;
 
   @media screen and (min-width: 768px) {
@@ -176,7 +176,7 @@
   }
 }
 
-.bottom-line-container {
+.sale__bottom-line-container {
   position: absolute;
   left: 0;
   top: 34px;
@@ -187,7 +187,7 @@
   }
 }
 
-.bottom-line {
+.sale__bottom-line {
   height: 8px;
 
   @media screen and (min-width: 768px) {
