@@ -1,5 +1,6 @@
 .take-order {
   position: relative;
+  overflow: hidden;
   padding-top: 144px;
   padding-bottom: 32px;
   background-position: center;
@@ -253,20 +254,20 @@
 }
 
 .top-right-part {
-  width: 41.99vw;
+  width: 42vw;
   border-top: 1px solid #7be34a;
   border-left: 0.5px solid #7be34a;
 
   @media screen and (min-width: 480px) {
-    width: 44.99vw;
+    width: 45vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 43.99vw;
+    width: 44vw;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 65.99vw;
+    width: 66vw;
   }
 }
 
@@ -308,19 +309,19 @@
 }
 
 .bottom-right-part {
-  width: 42.99vw;
+  width: 41vw;
   border-top: 1px solid #28780d;
   border-left: 0.5px solid #28780d;
 
   @media screen and (min-width: 480px) {
-    width: 44.29vw;
+    width: 44.3vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 42.99vw;
+    width: 43vw;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 65.39vw;
+    width: 65.4vw;
   }
 }

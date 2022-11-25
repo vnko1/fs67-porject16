@@ -3,6 +3,7 @@ $header-height: 136px;
 
 .contacts {
   position: relative;
+  overflow: hidden;
 
   padding: 40px + $header-height-mob 0 48px+401px;
 
@@ -54,19 +55,15 @@ $header-height: 136px;
   border-right: 0.5px solid #7be34a;
 
   @media screen and (min-width: 480px) {
-    width: 44vw;
+    width: 55vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 41vw;
+    width: 56vw;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 42vw;
-  }
-
-  @media screen and (min-width: 1450px) {
-    width: 44vw;
+    width: 34vw;
   }
 }
 
@@ -76,19 +73,15 @@ $header-height: 136px;
   border-left: 0.5px solid #7be34a;
 
   @media screen and (min-width: 480px) {
-    width: 55.99vw;
+    width: 45vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 58.99vw;
+    width: 44vw;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 57.99vw;
-  }
-
-  @media screen and (min-width: 1450px) {
-    width: 55.99vw;
+    width: 66vw;
   }
 }
 
@@ -117,19 +110,15 @@ $header-height: 136px;
   border-right: 0.5px solid #28780d;
 
   @media screen and (min-width: 480px) {
-    width: 44.6vw;
+    width: 55.7vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 41.6vw;
+    width: 57vw;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 42.6vw;
-  }
-
-  @media screen and (min-width: 1450px) {
-    width: 44.6vw;
+    width: 34.6vw;
   }
 }
 
@@ -139,19 +128,15 @@ $header-height: 136px;
   border-left: 0.5px solid #28780d;
 
   @media screen and (min-width: 480px) {
-    width: 55.39vw;
+    width: 44.3vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 58.39vw;
+    width: 43vw;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 57.39vw;
-  }
-
-  @media screen and (min-width: 1450px) {
-    width: 55.39vw;
+    width: 65.4vw;
   }
 }
 
@@ -166,12 +151,13 @@ $header-height: 136px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 67px;
-
+    margin-left: 59px;
     font-size: 56px;
   }
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 75px;
+    margin-left: 102px;
   }
 }
 
