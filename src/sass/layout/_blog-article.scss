@@ -8,19 +8,16 @@
   background-size: cover;
   flex-wrap: 1;
   height: auto;
+  overflow: hidden;
   @include retina-device {
-    .box {
-      background-image: url(../images/article/blog-article-bg-mobile_2x.jpg);
-    }
+    background-image: url(../images/article/blog-article-bg-mobile_2x.jpg);
   }
   @include tablet {
     padding-top: 208px;
     padding-bottom: 120px;
     background-image: url(../images/article/blog-article-bg-tablet_1x.jpg);
     @include retina-device {
-      .box {
-        background-image: url(../images/article/blog-article-bg-tablet_2x.jpg);
-      }
+      background-image: url(../images/article/blog-article-bg-tablet_2x.jpg);
     }
   }
   @include desktop {
@@ -28,9 +25,7 @@
     padding-bottom: 120px;
     background-image: url(../images/article/blog-article-bg-desctop_1x.jpg);
     @include retina-device {
-      .box {
-        background-image: url(../images/article/blog-article-bg-desctop_2x.jpg);
-      }
+      background-image: url(../images/article/blog-article-bg-desctop_2x.jpg);
     }
   }
 }
