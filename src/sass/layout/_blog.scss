@@ -414,7 +414,9 @@
 .blog__line-two {
   position: absolute;
   left: 0;
-  top: 52px;
+  top: 7px;
 
-  @media screen and (min-width:768px) {}
+  @media screen and (min-width:768px) {
+    top: 52px;
+  }
 }
