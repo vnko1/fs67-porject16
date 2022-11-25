@@ -1,14 +1,69 @@
 <section class="blog">
   <div class="blog__container container">
-    <div class="blog__top-line-container">
+    <!-- <div class="blog__top-line-container">
       <div class="blog__top-line blog__top-left-part"></div>
       <div class="blog__top-line blog__top-right-part"></div>
     </div>
     <div class="blog__bottom-line-container">
       <div class="blog__bottom-line blog__bottom-left-part"></div>
       <div class="blog__bottom-line blog__bottom-right-part"></div>
-    </div>
-    <h1 class="blog__title">Blog</h1>
+    </div> -->
+    <h2 class="blog__title">Blog</h2>
+    <picture>
+      <source
+        class="blog__line-one"
+        srcset="
+          /src/images/blog/line-one-mobile.png    1x,
+          /src/images/blog/line-one-mobile_2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+      <!-- <source
+        class="blog__line-one"
+        srcset="
+          /src/images/blog/line-two-tablet.png    1x,
+          /src/images/blog/line-two-tablet_2x.png 2x
+        "
+        media="(min-width:768px)"
+      /> -->
+
+      <img
+        srcset="
+          /src/images/blog/line-one-mobile.png    1x,
+          /src/images/blog/line-one-mobile_2x.png 2x
+        "
+        src="/src/images/blog/line-one-mobile.png"
+        alt="line"
+        class="blog__line-one"
+      />
+    </picture>
+    <picture>
+      <source
+        class="blog__line-two"
+        srcset="
+          /src/images/blog/line-two-mobile.png    1x,
+          /src/images/blog/line-two-mobile_2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+      <!-- <source
+        class="blog__line-two"
+        srcset="
+          /src/images/blog/line-two-tablet.png    1x,
+          /src/images/blog/line-two-tablet_2x.png 2x
+        "
+        media="(min-width:768px)"
+      /> -->
+      <img
+        srcset="
+          /src/images/blog/line-two-mobile.png    1x,
+          /src/images/blog/line-two-mobile_2x.png 2x
+        "
+        src="/src/images/blog/line-two-mobile.png"
+        alt="line"
+        class="blog__line-two"
+      />
+    </picture>
 
     <ul class="blog__list">
       <li class="blog__item">
