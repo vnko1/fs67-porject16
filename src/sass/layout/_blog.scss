@@ -1,5 +1,6 @@
 .blog__container {
-  position: relative;
+  // position: relative;
+
 
   @media screen and (max-width:767px) {
     width: 320px;
@@ -11,6 +12,8 @@
   position: relative;
   padding-top: 144px;
   padding-bottom: 48px;
+  overflow: hidden;
+
 
   @include contentMedia($tablet) {
     padding-top: 256px;
@@ -311,7 +314,7 @@
     width: 20.99vw;
   }
 
-  @media screen and (min-width: 1450px) {
+  @media screen and (min-width: 1440px) {
     width: 23.99vw;
   }
 }
@@ -333,7 +336,7 @@
     width: 78.99vw;
   }
 
-  @media screen and (min-width: 1450px) {
+  @media screen and (min-width: 1440px) {
     width: 75.98vw;
   }
 }
@@ -374,7 +377,7 @@
     width: 21.59vw;
   }
 
-  @media screen and (min-width: 1450px) {
+  @media screen and (min-width: 1440px) {
     width: 24.59vw;
   }
 }
@@ -396,27 +399,27 @@
     width: 78.39vw;
   }
 
-  @media screen and (min-width: 1450px) {
+  @media screen and (min-width: 1440px) {
     width: 75.39vw;
   }
 }
 
-.blog__line-one {
-  position: absolute;
-  left: 0;
-  top: 4px;
+// .blog__line-one {
+//   position: absolute;
+//   left: 0;
+//   top: 4px;
 
-  @media screen and (min-width:768px) {
-    top: 44px;
-  }
-}
+//   @media screen and (min-width:768px) {
+//     top: 44px;
+//   }
+// }
 
-.blog__line-two {
-  position: absolute;
-  left: 0;
-  top: 7px;
+// .blog__line-two {
+//   position: absolute;
+//   left: 0;
+//   top: 7px;
 
-  @media screen and (min-width:768px) {
-    top: 52px;
-  }
-}
+//   @media screen and (min-width:768px) {
+//     top: 52px;
+//   }
+// }
