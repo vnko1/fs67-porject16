@@ -11,6 +11,7 @@
 }
 
 .accessories {
+    overflow: hidden;
     position: relative;
     padding: 144px 0 449px 0;
     margin: auto;
@@ -396,21 +397,21 @@
 }
 
 .top-right-part {
-    width: 41.2vw;
+    width: 43.2vw;
     border-top: 1px solid #7be34a;
     border-left: 0.5px solid #7be34a;
 
 
     @media screen and (min-width: 480px) {
-        width: 45vw;
+        width: 47vw;
     }
 
     @media screen and (min-width: 768px) {
-        width: 31vw;
+        width: 36vw;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 57.9vw;
+        width: 59.9vw;
     }
 }
 
@@ -453,19 +454,19 @@
 }
 
 .bottom-right-part {
-    width: 40.4vw;
+    width: 43.4vw;
     border-top: 1px solid #28780d;
     border-left: 0.5px solid #28780d;
 
     @media screen and (min-width: 480px) {
-        width: 44.3vw;
+        width: 46.3vw;
     }
 
     @media screen and (min-width: 768px) {
-        width: 30vw;
+        width: 33vw;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 57.35vw;
+        width: 59.35vw;
     }
 }
