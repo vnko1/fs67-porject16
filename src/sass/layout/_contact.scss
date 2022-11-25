@@ -31,7 +31,7 @@ $header-height: 136px;
 
 .atop-line-container {
   position: absolute;
-  left: -1vw;
+  left: -0.01vw;
   top: 68px + $header-height-mob;
   display: flex;
 
@@ -54,19 +54,15 @@ $header-height: 136px;
   border-right: 0.5px solid #7be34a;
 
   @media screen and (min-width: 480px) {
-    width: 44vw;
+    width: 55vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 41vw;
+    width: 56vw;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 42vw;
-  }
-
-  @media screen and (min-width: 1450px) {
-    width: 44vw;
+    width: 34vw;
   }
 }
 
@@ -76,25 +72,21 @@ $header-height: 136px;
   border-left: 0.5px solid #7be34a;
 
   @media screen and (min-width: 480px) {
-    width: 56vw;
+    width: 45vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 59vw;
+    width: 44vw;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 58vw;
-  }
-
-  @media screen and (min-width: 1450px) {
-    width: 56vw;
+    width: 66vw;
   }
 }
 
 .abottom-line-container {
   position: absolute;
-  left: -1vw;
+  left: -0.01vw;
   top: 72px + $header-height-mob;
   display: flex;
 
@@ -117,19 +109,15 @@ $header-height: 136px;
   border-right: 0.5px solid #28780d;
 
   @media screen and (min-width: 480px) {
-    width: 44.6vw;
+    width: 55.7vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 41.6vw;
+    width: 57vw;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 42.6vw;
-  }
-
-  @media screen and (min-width: 1450px) {
-    width: 44.6vw;
+    width: 34.6vw;
   }
 }
 
@@ -139,19 +127,15 @@ $header-height: 136px;
   border-left: 0.5px solid #28780d;
 
   @media screen and (min-width: 480px) {
-    width: 55.4vw;
+    width: 44.3vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 58.4vw;
+    width: 43vw;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 57.4vw;
-  }
-
-  @media screen and (min-width: 1450px) {
-    width: 55.4vw;
+    width: 65.4vw;
   }
 }
 
@@ -166,12 +150,13 @@ $header-height: 136px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 67px;
-
+    margin-left: 59px;
     font-size: 56px;
   }
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 75px;
+    margin-left: 102px;
   }
 }
 
