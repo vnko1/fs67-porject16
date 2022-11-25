@@ -31,7 +31,7 @@ $header-height: 136px;
 
 .atop-line-container {
   position: absolute;
-  left: 0;
+  left: -1vw;
   top: 68px + $header-height-mob;
   display: flex;
 
@@ -94,7 +94,7 @@ $header-height: 136px;
 
 .abottom-line-container {
   position: absolute;
-  left: 0;
+  left: -1vw;
   top: 72px + $header-height-mob;
   display: flex;
 
