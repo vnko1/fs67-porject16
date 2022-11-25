@@ -23,28 +23,17 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 479px) {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
   @media screen and (min-width: 480px) {
-    padding-top: 24px;
-    padding-bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -71,6 +60,17 @@
   text-align: center;
 
   color: $main-font-color;
+}
+
+.logo-header {
+  @media screen and (max-width: 767px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .menu-btn {
