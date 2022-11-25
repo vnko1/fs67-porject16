@@ -8,9 +8,9 @@ body {
   color: $main-font-color;
   background-color: $main-bg-color;
 
-  &.is-open {
-    overflow: hidden;
-  }
+  // &.is-open {
+  //   overflow: hidden;
+  // }
 }
 
 .common-body-style {
