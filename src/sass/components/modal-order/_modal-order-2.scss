@@ -59,17 +59,11 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-  margin-top: -30px;
+
   @include contentMedia(768px) {
     gap: 56px;
-    margin-top: -60px;
   }
-  @include contentMedia(768px) {
-    margin-top: -60px;
-  }
-  @include contentMedia(768px) {
-    margin-top: -80px;
-  }
+
   &__header {
     white-space: pre-line;
     width: 232px;
