@@ -72,13 +72,13 @@
 }
 
 .top-info {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
 
 .top-info-desctop {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     display: none;
   }
 }
