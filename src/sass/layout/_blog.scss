@@ -405,10 +405,16 @@
   position: absolute;
   left: 0;
   top: 4px;
+
+  @media screen and (min-width:768px) {
+    top: 44px;
+  }
 }
 
 .blog__line-two {
   position: absolute;
   left: 0;
-  top: 7px;
+  top: 52px;
+
+  @media screen and (min-width:768px) {}
 }
