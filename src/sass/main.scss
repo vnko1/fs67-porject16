@@ -5,9 +5,18 @@
 @import './base/common';
 @import './base/reset';
 @import './base/hidden';
+
+@import './components/contact-modal';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/banners';
+@import './layout/sale';
+@import './layout/contact';
 @import './layout/accessories';
+@import './layout/take-order-dropdown';
 @import './layout/order-forms';
 @import './layout/footer';
+
+@import './components/modal-order/modal-order';
+@import './components/modal-order/modal-order-2';

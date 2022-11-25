@@ -283,22 +283,29 @@
 
   &__item {
     &:nth-child(n + 2) {
-      animation-name: scale;
-      animation-duration: 2s;
+      animation-name: translating;
+      animation-duration: 1200ms;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
 
-      @keyframes scale {
+      @keyframes translating {
         0% {
-          transform: scale(0.3);
-        }
-
-        50% {
-          transform: scale(1);
+          transform: translateX(-150%);
         }
 
         100% {
-          transform: scale(0.3);
+          transform: translateX(50%);
+        }
+      }
+
+      @include contentMedia($desktop) {
+        @keyframes translating {
+          0% {
+            transform: translateX(-150%);
+          }
+          100% {
+            transform: translateX(50%);
+          }
         }
       }
     }
@@ -325,7 +332,7 @@
   }
 }
 
-.top-line-container {
+.accessories__top-line-container {
   position: absolute;
   left: 0;
   top: 310px;
@@ -336,7 +343,7 @@
   }
 }
 
-.top-line {
+.accessories__top-line {
   height: 8px;
 
   @media screen and (min-width: 768px) {
@@ -344,7 +351,7 @@
   }
 }
 
-.top-left-part {
+.accessories__top-left-part {
   width: 58vw;
   border-bottom: 1px solid #7be34a;
   border-right: 0.5px solid #7be34a;
@@ -366,7 +373,7 @@
   }
 }
 
-.top-right-part {
+.accessories__top-right-part {
   width: 42vw;
   border-top: 1px solid #7be34a;
   border-left: 0.5px solid #7be34a;
@@ -388,7 +395,7 @@
   }
 }
 
-.bottom-line-container {
+.accessories__bottom-line-container {
   position: absolute;
   left: 0;
   top: 313px;
@@ -399,7 +406,7 @@
   }
 }
 
-.bottom-line {
+.accessories__bottom-line {
   height: 8px;
 
   @media screen and (min-width: 768px) {
@@ -407,46 +414,46 @@
   }
 }
 
-.bottom-left-part {
-  width: 59vw;
+.accessories__bottom-left-part {
+  width: 58.99vw;
   border-bottom: 1px solid #28780d;
   border-right: 0.5px solid #28780d;
 
   @media screen and (min-width: 480px) {
-    width: 55.7vw;
+    width: 55.69vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 70vw;
+    width: 69.99vw;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 42.6vw;
+    width: 42.59vw;
   }
 
   @media screen and (min-width: 1450px) {
-    width: 44.6vw;
+    width: 44.59vw;
   }
 }
 
-.bottom-right-part {
-  width: 41vw;
+.accessories__bottom-right-part {
+  width: 40.99vw;
   border-top: 1px solid #28780d;
   border-left: 0.5px solid #28780d;
 
   @media screen and (min-width: 480px) {
-    width: 44.3vw;
+    width: 44.29vw;
   }
 
   @media screen and (min-width: 768px) {
-    width: 30vw;
+    width: 29.99vw;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 57.4vw;
+    width: 57.39vw;
   }
 
   @media screen and (min-width: 1450px) {
-    width: 54.4vw;
+    width: 54.39vw;
   }
 }
