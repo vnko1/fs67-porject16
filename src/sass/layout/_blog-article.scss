@@ -156,13 +156,14 @@
     flex-direction: column;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
   }
 }
 
 .top-text__title {
   @include font(600, 16px, 1, null);
   color: #ffffff;
-  max-width: 320px;
+  width: 320px;
   margin-top: 20px;
   margin-bottom: 8px;
   margin-left: auto;
@@ -171,13 +172,13 @@
     @include font(600, 24px, 1, null);
     color: #86e543;
     margin-bottom: 32px;
-    width: 248px;
+    max-width: 248px;
   }
   @include desktop {
     @include font(400, 24px, 1.16, null);
     color: #86e543;
-    width: 270px;
-    margin-left: 0;
+    width: 249px;
+    margin-left: auto;
     margin-right: 0;
   }
 }
@@ -186,7 +187,7 @@
   @include font(600, 16px, 1, null);
   color: #8d9289;
   margin-bottom: 8px;
-  max-width: 320px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
   @include tablet {
@@ -197,9 +198,9 @@
   @include desktop {
     @include font(400, 24px, 1.16, null);
     color: #8d9289;
-    width: 370px;
-    margin-left: 96px;
+    width: 347px;
     margin-right: 0;
+    margin-left: 96px;
   }
 }
 
@@ -207,7 +208,7 @@
   @include font(400, 16px, 1.14, null);
   color: #ffffff;
   max-width: 320px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   margin-top: 10px;
   @include tablet {
     @include font(600, 24px, 1.16, null);
@@ -215,6 +216,21 @@
   }
   @include desktop {
     @include font(400, 24px, 1.16, null);
+  }
+}
+
+.top-text-list__text-bottom {
+  @include font(400, 16px, 1.14, null);
+  color: #ffffff;
+  max-width: 320px;
+  margin-top: 10px;
+  @include tablet {
+    @include font(600, 24px, 1.16, null);
+    max-width: 688px;
+  }
+  @include desktop {
+    @include font(400, 24px, 1.16, null);
+    margin-bottom: 0;
   }
 }
 
