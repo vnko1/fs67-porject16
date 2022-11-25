@@ -1,6 +1,7 @@
 .sale {
   padding-bottom: 48px;
   position: relative;
+  overflow: hidden;
   @media screen and (min-width: 768px) {
     padding-bottom: 120px;
   }
@@ -123,7 +124,7 @@
 
 .sale__top-line-container {
   position: absolute;
-  left: -0.01vw;
+  left: 0;
   top: 30px;
   display: flex;
 
@@ -178,7 +179,7 @@
 
 .sale__bottom-line-container {
   position: absolute;
-  left: -0.01vw;
+  left: 0;
   top: 34px;
   display: flex;
 

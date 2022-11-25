@@ -3,6 +3,7 @@ $header-height: 136px;
 
 .contacts {
   position: relative;
+  overflow: hidden;
 
   padding: 40px + $header-height-mob 0 48px+401px;
 
@@ -31,7 +32,7 @@ $header-height: 136px;
 
 .atop-line-container {
   position: absolute;
-  left: -0.01vw;
+  left: 0;
   top: 68px + $header-height-mob;
   display: flex;
 
@@ -86,7 +87,7 @@ $header-height: 136px;
 
 .abottom-line-container {
   position: absolute;
-  left: -0.01vw;
+  left: 0;
   top: 72px + $header-height-mob;
   display: flex;
 

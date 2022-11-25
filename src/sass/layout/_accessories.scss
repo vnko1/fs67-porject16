@@ -12,6 +12,7 @@
 
 .accessories {
   position: relative;
+  overflow: hidden;
   padding: 144px 0 48px 0;
   margin: auto;
   // max-width: 320px;
@@ -334,7 +335,7 @@
 
 .accessories__top-line-container {
   position: absolute;
-  left: -0.01vw;
+  left: 0;
   top: 310px;
   display: flex;
 
@@ -397,7 +398,7 @@
 
 .accessories__bottom-line-container {
   position: absolute;
-  left: -0.01vw;
+  left: 0;
   top: 313px;
   display: flex;
 

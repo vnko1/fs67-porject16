@@ -1,5 +1,6 @@
 .take-order {
   position: relative;
+  overflow: hidden;
   padding-top: 144px;
   padding-bottom: 32px;
   background-position: center;
@@ -217,7 +218,7 @@
 
 .top-line-container {
   position: absolute;
-  left: -0.01vw;
+  left: 0;
   top: 172px;
   display: flex;
 
@@ -272,7 +273,7 @@
 
 .bottom-line-container {
   position: absolute;
-  left: -0.01vw;
+  left: 0;
   top: 176px;
   display: flex;
 
