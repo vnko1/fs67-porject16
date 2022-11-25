@@ -21,6 +21,7 @@
 .pageheader {
   position: absolute;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   @media screen and (min-width: 480px) {
@@ -46,11 +47,11 @@
   width: 115px;
   @media screen and (min-width: 768px) {
     width: 156px;
-    margin-right: 161px;
+    // margin-right: 161px;
   }
   @media screen and (min-width: 1280px) {
     width: 121px;
-    margin-right: 343px;
+    // margin-right: 343px;
   }
 
   font-weight: 700;
@@ -76,11 +77,11 @@
 .menu-btn {
   position: relative;
   display: flex;
-  margin-left: auto;
-  @media screen and (min-width: 768px) {
-    margin-left: 0;
-    margin-right: auto;
-  }
+  // margin-left: auto;
+  // @media screen and (min-width: 768px) {
+  //   margin-left: 0;
+  //   margin-right: auto;
+  // }
 
   @media screen and (min-width: 1280px) {
     display: none;
@@ -131,7 +132,7 @@
 .header-nav {
   display: flex;
   gap: 48px;
-  margin-right: auto;
+  // margin-right: auto;
   @media screen and (max-width: 1279px) {
     display: none;
   }
@@ -170,13 +171,13 @@
 
   &:hover,
   &:focus {
-    .nav-linkheader__checked {
+    .nav-linkheader__active {
       background-color: #86e543;
     }
   }
 }
 
-.nav-linkheader__checked {
+.nav-linkheader__active {
   position: absolute;
   top: 87px;
   left: 0;
