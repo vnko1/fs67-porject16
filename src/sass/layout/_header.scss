@@ -155,6 +155,38 @@
   }
 }
 
+.nav-linkheader {
+  position: relative;
+  display: inline-block;
+  padding: 59px 0px;
+
+  line-height: 1;
+
+  color: $main-font-color;
+
+  border-bottom: 1px solid transparent;
+
+  @include animation(border-bottom);
+
+  &:hover,
+  &:focus {
+    .nav-linkheader__checked {
+      background-color: #86e543;
+    }
+  }
+}
+
+.nav-linkheader__checked {
+  position: absolute;
+  top: 87px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+
+  background-color: transparent;
+  @include animation(background-color);
+}
+
 .header-btn {
   @media screen and (max-width: 767px) {
     display: none;
