@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 144px;
   padding-bottom: 48px;
+
   @include contentMedia($tablet) {
     padding-top: 256px;
     padding-bottom: 120px;
@@ -43,11 +44,13 @@
   &:not(:last-child) {
     margin-bottom: 24px;
   }
+
   @include contentMedia($tablet) {
     &:not(:last-child) {
       margin-bottom: 40px;
     }
   }
+
   @include contentMedia($desktop) {
     display: flex;
     justify-content: space-between;
@@ -68,6 +71,7 @@
   font-size: 24px;
   line-height: 1.16;
   margin-bottom: 16px;
+
   @include contentMedia($tablet) {
     font-size: 56px;
     line-height: 1;
@@ -80,6 +84,7 @@
 
 .blog__article-wrap {
   display: block;
+
   @include mwContentMedia($tablet) {
     // min-height: 473px;
     margin-top: auto;
@@ -123,6 +128,7 @@
 
 .blog__img--desk {
   display: none;
+
   @include contentMedia($desktop) {
     display: block;
     min-height: 364px;
@@ -196,7 +202,7 @@
   font-size: 16px;
   line-height: 1;
   text-decoration: none;
-  
+
   color: #86e543;
   display: flex;
   justify-content: flex-end;
