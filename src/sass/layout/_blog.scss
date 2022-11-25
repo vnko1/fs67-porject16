@@ -257,3 +257,130 @@
 .dot3 {
   animation-name: slide;
 }
+
+
+.blog__top-line-container {
+  position: absolute;
+  left: 0;
+  top: 171px;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    top: 440px;
+  }
+}
+
+.blog__top-line {
+  height: 8px;
+
+  @media screen and (min-width: 768px) {
+    height: 19px;
+  }
+}
+
+.blog__top-left-part {
+  width: 23vw;
+  border-bottom: 1px solid #7be34a;
+  border-right: 0.5px solid #7be34a;
+
+  @media screen and (min-width: 480px) {
+    width: 31vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 69vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 42vw;
+  }
+
+  @media screen and (min-width: 1450px) {
+    width: 44vw;
+  }
+}
+
+.blog__top-right-part {
+  width: 77vw;
+  border-top: 1px solid #7be34a;
+  border-left: 0.5px solid #7be34a;
+
+  @media screen and (min-width: 480px) {
+    width: 69vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 31vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 58vw;
+  }
+
+  @media screen and (min-width: 1450px) {
+    width: 56vw;
+  }
+}
+
+.blog__bottom-line-container {
+  position: absolute;
+  left: 0;
+  top: 174px;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    top: 448px;
+  }
+}
+
+.blog__bottom-line {
+  height: 8px;
+
+  @media screen and (min-width: 768px) {
+    height: 19px;
+  }
+}
+
+.blog__bottom-left-part {
+  width: 58.99vw;
+  border-bottom: 1px solid #28780d;
+  border-right: 0.5px solid #28780d;
+
+  @media screen and (min-width: 480px) {
+    width: 55.69vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 69.99vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 42.59vw;
+  }
+
+  @media screen and (min-width: 1450px) {
+    width: 44.59vw;
+  }
+}
+
+.blog__bottom-right-part {
+  width: 40.99vw;
+  border-top: 1px solid #28780d;
+  border-left: 0.5px solid #28780d;
+
+  @media screen and (min-width: 480px) {
+    width: 44.29vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 29.99vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 57.39vw;
+  }
+
+  @media screen and (min-width: 1450px) {
+    width: 54.39vw;
+  }
+}

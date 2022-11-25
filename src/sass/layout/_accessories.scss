@@ -23,8 +23,8 @@
   background-image: url(/src/images/accessories/back-access-mobile.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     background-image: url(/src/images/accessories/back-access-mobile_2x.jpg);
   }
 
@@ -34,8 +34,8 @@
     background-image: url(/src/images/accessories/back-access-tablet.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(/src/images/accessories/back-access-tablet_2x.jpg);
     }
   }
@@ -47,8 +47,8 @@
     background-image: url(/src/images/accessories/back-access-desktop.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(/src/images/accessories/back-access-desktop_2x.jpg);
     }
   }
@@ -303,6 +303,7 @@
           0% {
             transform: translateX(-150%);
           }
+
           100% {
             transform: translateX(50%);
           }
