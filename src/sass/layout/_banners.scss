@@ -43,43 +43,99 @@
 
 .banner-place {
   background-image: url(../images/main/rectangle84-mob-1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/main/rectangle84-mob-2x.jpg);
-    }}
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-  .banner-shop {
-  background-image: url(../images/main/rectangle86-mob-1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../images/main/rectangle86-mob-2x.jpg);
+    background-image: url(../images/main/rectangle84-mob-2x.jpg);
+  }
+  @include contentMedia($tablet) {
+    background-image: url(../images/main/rectangle84-tab-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/main/rectangle84-tab-2x.jpg);
     }
   }
+  @include contentMedia($desktop) {
+    background-image: url(../images/main/rectangle84-desk-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/main/rectangle84-desk-2x.jpg);
+    }
+  }
+}
+
+.banner-shop {
+  background-image: url(../images/main/rectangle86-mob-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/main/rectangle86-mob-2x.jpg);
+  }
+  @include contentMedia($tablet) {
+    background-image: url(../images/main/rectangle86-tab-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/main/rectangle86-tab-2x.jpg);
+    }
+  }
+  @include contentMedia($desktop) {
+    background-image: url(../images/main/rectangle86-desk-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/main/rectangle86-desk-2x.jpg);
+    }
+  }
+}
 
 .banner-products {
   background-image: url(../images/main/rectangle85-mob-1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  
-    @media (min-device-pixel-ratio: 2),
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../images/main/rectangle85-mob-2x.jpg);
-    }}
+    background-image: url(../images/main/rectangle85-mob-2x.jpg);
+  }
+  @include contentMedia($tablet) {
+    background-image: url(../images/main/rectangle85-tab-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/main/rectangle85-tab-2x.jpg);
+    }
+  }
+  @include contentMedia($desktop) {
+    background-image: url(../images/main/rectangle85-desk-1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/main/rectangle85-desk-2x.jpg);
+    }
+  }
+}
 
 .section-banners__text {
   position: absolute;
