@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop fo gamers</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./sass/main.scss" />
     <link rel="icon" href="./icons/favicon.svg" />
     <script type="module" src="./index.js"></script>
@@ -12,10 +16,11 @@
     <!-- в мейн підключаються паршалы секцій, хедер та футер перед мейном та після -->
     <include src="./partials/header.html"></include>
     <main>
+      <include src="./partials/banners.html"></include>
       <include src="./partials/sale.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
