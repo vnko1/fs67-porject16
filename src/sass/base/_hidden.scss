@@ -74,7 +74,6 @@ margin-left: 40px;
   background-color: #ffff;
   border-radius: 30px;
   display: inline-block;
-  
 }
 .dote {
   height: 16px;
@@ -84,6 +83,8 @@ margin-left: 40px;
   display: inline-block;
 }
 .dotes {
-  text-align: center;
-  margin-top: 48px;
+  width: 100px;
+  height: 16px;
+  margin: 0 auto;
+  position: relative;
 }
