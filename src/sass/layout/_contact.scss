@@ -1,0 +1,427 @@
+$header-height-mob: 104px;
+$header-height: 136px;
+
+.contacts {
+  position: relative;
+  overflow: hidden;
+
+  padding: 40px + $header-height-mob 0 48px+401px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 120px + $header-height 0 120px;
+
+    background-image: url(../images/contact/bg-tab.jpg);
+    background-repeat: no-repeat;
+
+    @include bg-retina {
+      background-image: url(../images/contact/bg-tab_2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/contact/bg-desktop.jpg);
+    background-repeat: no-repeat;
+
+    @include bg-retina {
+      background-image: url(../images/contact/bg-desktop_2x.jpg);
+    }
+  }
+}
+
+// -------------------------------------------------
+
+.atop-line-container {
+  position: absolute;
+  left: 0;
+  top: 68px + $header-height-mob;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    top: 186px + $header-height;
+  }
+}
+
+.atop-line {
+  height: 8px;
+
+  @media screen and (min-width: 768px) {
+    height: 19px;
+  }
+}
+
+.atop-left-part {
+  width: 38vw;
+  border-bottom: 1px solid #7be34a;
+  border-right: 0.5px solid #7be34a;
+
+  @media screen and (min-width: 480px) {
+    width: 55vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 56vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 34vw;
+  }
+}
+
+.atop-right-part {
+  width: 61.99vw;
+  border-top: 1px solid #7be34a;
+  border-left: 0.5px solid #7be34a;
+
+  @media screen and (min-width: 480px) {
+    width: 45vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 44vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 66vw;
+  }
+}
+
+.abottom-line-container {
+  position: absolute;
+  left: 0;
+  top: 72px + $header-height-mob;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    top: 194px + $header-height;
+  }
+}
+
+.abottom-line {
+  height: 8px;
+
+  @media screen and (min-width: 768px) {
+    height: 19px;
+  }
+}
+
+.abottom-left-part {
+  width: 38.6vw;
+  border-bottom: 1px solid #28780d;
+  border-right: 0.5px solid #28780d;
+
+  @media screen and (min-width: 480px) {
+    width: 55.7vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 57vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 34.6vw;
+  }
+}
+
+.abottom-right-part {
+  width: 61.39vw;
+  border-top: 1px solid #28780d;
+  border-left: 0.5px solid #28780d;
+
+  @media screen and (min-width: 480px) {
+    width: 44.3vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 43vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 65.4vw;
+  }
+}
+
+// -------------------------------------------------
+
+.contacts__title {
+  margin-bottom: 35px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 67px;
+    margin-left: 59px;
+    font-size: 56px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 75px;
+    margin-left: 102px;
+  }
+}
+
+// .img-wrap {
+//   // position: relative;
+//   height: 346px;
+//   width: 100vw;
+//   margin-bottom: 16px;
+//   margin-left: -16px;
+
+//   background-image: url(../images/contact/contact-mob.jpg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+
+//   @include bg-retina {
+//     background-image: url(../images/contact/contact-mob_2x.jpg);
+//   }
+
+//   @media screen and (min-width: $mobile) {
+//     background-image: url(../images/contact/contact-tab.png);
+//     width: 100%;
+//     margin-left: 0;
+//     // border-radius: 12px;
+//   }
+
+//   @media screen and (min-width: $tablet) {
+//     background-image: url(../images/contact/contact-tab.png);
+//     width: 100%;
+//     margin-left: 0;
+//     // border-radius: 14px;
+
+//     @include bg-retina {
+//       background-image: url(../images/contact/contact-tab_2x.png);
+//     }
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     background-image: url(../images/contact/contact-desktop.png);
+//     width: 100%;
+//     margin-left: 0;
+//     border-radius: 14px;
+
+//     @include bg-retina {
+//       background-image: url(../images/contact/contact-desktop_2x.png);
+//     }
+//   }
+// }
+
+// ---------------PICTURE--------------------
+
+.img-wrap {
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 479px) {
+    padding: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 59px;
+  }
+}
+
+// ---------------MAIN TEXT--------------------
+
+.content-wrap {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contacts__text {
+  margin-bottom: 24px;
+  line-height: 1.17;
+
+  @media screen and (min-width: $tablet) {
+    width: 488px;
+    margin-bottom: 32px;
+
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.contacts-text .contact-link {
+  color: inherit;
+}
+
+.mail-link {
+  display: block;
+  color: inherit;
+}
+
+.contacts__link {
+  color: #8d9289;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin-bottom: 24px;
+
+  line-height: 1.17;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 32px;
+
+    margin-bottom: 40px;
+
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.contacts-list__title {
+  margin-bottom: 8px;
+
+  font-size: inherit;
+}
+
+.tel:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+// ---------------FORM--------------------
+
+.form-wrap {
+  @media screen and (min-width: $tablet) {
+    width: 590px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.form-title {
+  margin-bottom: 16px;
+
+  color: $accent-color;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 48px;
+
+    font-size: 36px;
+  }
+}
+
+.form {
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
+}
+
+.input-wrap {
+  position: relative;
+  margin-bottom: 40px;
+
+  line-height: 1.25;
+}
+
+.form__label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  @include animation(transform);
+}
+
+.form__input {
+  width: 100%;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $accent-color;
+
+  color: #ffffff;
+
+  &:focus + .form__label,
+  &:not(:placeholder-shown) + .form__label {
+    transform: translateY(-32px);
+  }
+
+  @media screen and (min-width: $tablet) {
+    &:focus + .form__label,
+    &:not(:placeholder-shown) + .form__label {
+      transform: translateY(-35px);
+    }
+  }
+}
+
+.form__comments-label {
+  display: block;
+  margin-bottom: 4px;
+
+  color: #cdcdcd;
+}
+
+.form__comments {
+  margin-bottom: 24px;
+  height: 95px;
+  width: 100%;
+
+  resize: none;
+
+  background-color: transparent;
+  border: 1px solid $accent-color;
+
+  color: #ffffff;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 47px;
+  }
+}
+
+.form__btn {
+  display: block;
+  padding: 16px 66px;
+
+  cursor: pointer;
+
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+
+  text-transform: uppercase;
+
+  color: $main-font-color;
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1))
+      drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+  }
+  @media screen and (max-width: 1279px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $tablet) {
+    padding: 16px 112px;
+
+    font-size: 32px;
+  }
+}

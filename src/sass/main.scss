@@ -2,8 +2,19 @@
 @import './utils/vars';
 @import './utils/placeholders';
 @import './utils/mixins';
+
 @import './base/common';
 @import './base/reset';
 @import './base/hidden';
+
+@import './components/contact-modal';
+@import './components/order-modal';
+
 @import './layout/header';
+@import './layout/sale';
+@import './layout/contact';
+@import './layout/banners';
 @import './layout/accessories';
+@import './layout/take-order-dropdown';
+@import './layout/order-forms';
+@import './layout/footer';

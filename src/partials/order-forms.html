@@ -1,0 +1,57 @@
+<div class="container order-form-container">
+    <div class="title-wrap">
+    <h2 class="order-form-title">CONTACT US</h2>
+    </div>
+    <form class="order-form">
+        <div class="order-form__wrap">
+        <input class="order-form__input" type="text" name="username" placeholder="Name" minlength="3" maxlength="25" required>
+
+        <input class="order-form__input" type="email" name="email" placeholder="Email" required>
+
+        <div class="select-wrap">
+                <select class="select" name="color" id="color" required>
+                    <option label=" "></option>
+                    <option class="select__opition" value="orange">K9D Black Orange</option>
+                    <option class="select__opition" value="gray">K9D Silver Gray</option>
+                    <option class="select__opition" value="blue">K9U White Blue</option>
+                </select>
+                <label class="order-form__label" for="color">Color Option</label>
+                <div class="arrow"></div>
+        </div>
+
+        <div class="select-wrap">
+                <select class="select" name="quantity" id="quantity" required>
+                    <option label=" "></option>
+                    <option class="select__opition" value="1">1</option>
+                    <option class="select__opition" value="2">2</option>
+                    <option class="select__opition" value="3">3</option>
+                </select>
+                <label class="order-form__label" for="quantity">Quantity</label>
+
+                <div class="arrow"></div>
+        </div>
+
+        <div class="select-wrap">
+                <select class="select" name="payment" id="payment" required>
+                    <option label=" "></option>
+                    <option class="select__opition" value="Privat">Privat24</option>
+                    <option class="select__opition" value="PayPal">PayPal</option>
+                    <option class="select__opition" value="Visa">Visa</option>
+                    <option class="select__opition" value="LiqPay">LiqPay</option>
+                </select>
+                <label class="order-form__label" for="payment">Payment</label>
+                <div class="arrow"></div>
+        </div>
+        </div>
+
+        <div class="form-area">
+            <label class="form-area__label" for="feedback">Leave your message</label>
+            <textarea class="form-area__textarea" id="feedback" name="feedback" ></textarea>
+        </div>
+
+        <div class="button-wrap">
+            <button class="button-buy" type="submit" data-modal-open>BUY IT NOW</button>
+            <button class="button-add" type="submit" data-order-open>ADD TO CART</button>
+        </div>
+    </form>
+</div>

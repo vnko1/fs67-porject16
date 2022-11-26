@@ -1,0 +1,233 @@
+.sale {
+  padding-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 120px;
+  }
+}
+
+.sale__container {
+  padding-right: 18px;
+  padding-left: 18px;
+  @media screen and (min-width: 768px) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.sale__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #ffffff;
+  margin-bottom: 35px;
+  padding-left: 62px;
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+  }
+}
+
+.sale__list {
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 20px;
+  }
+}
+
+.sale__item {
+  &:nth-child(2n) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 38px) / 2);
+    &:nth-child(2n) {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: calc((100% - 60px) / 4);
+  }
+}
+
+.sale__img {
+  border-radius: 12px;
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+}
+
+.sale__description {
+  padding: 8px 20px 16px;
+}
+
+.sale__product-name {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.18;
+  color: #86e543;
+}
+
+.sale__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sale__previous-price {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  text-decoration-line: line-through;
+  color: #8d9289;
+}
+
+.sale__product-price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #86e543;
+}
+
+.sale__btn {
+  display: block;
+  padding: 16px 48px;
+  width: 153px;
+  margin: 0 auto;
+
+  border-radius: 16px;
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: #01383a;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
+      0px 4px 10px rgba(134, 229, 67, 0.1);
+  }
+}
+
+.sale__top-line-container {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    top: 50px;
+  }
+}
+
+.sale__top-line {
+  height: 8px;
+
+  @media screen and (min-width: 768px) {
+    height: 19px;
+  }
+}
+
+.sale__top-left-part {
+  width: 45vw;
+  border-bottom: 1px solid #7be34a;
+  border-right: 0.5px solid #7be34a;
+
+  @media screen and (min-width: 480px) {
+    width: 47vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 40vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 25vw;
+  }
+}
+
+.sale__top-right-part {
+  width: 55vw;
+  border-top: 1px solid #7be34a;
+  border-left: 0.5px solid #7be34a;
+
+  @media screen and (min-width: 480px) {
+    width: 53vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 60vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 75vw;
+  }
+}
+
+.sale__bottom-line-container {
+  position: absolute;
+  left: 0;
+  top: 34px;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    top: 56px;
+  }
+}
+
+.sale__bottom-line {
+  height: 8px;
+
+  @media screen and (min-width: 768px) {
+    height: 19px;
+  }
+}
+
+.sale__bottom-left-part {
+  width: 47vw;
+  border-bottom: 1px solid #28780d;
+  border-right: 0.5px solid #28780d;
+
+  @media screen and (min-width: 480px) {
+    width: 48vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 41vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 25.5vw;
+  }
+}
+
+.sale__bottom-right-part {
+  width: 53vw;
+  border-top: 1px solid #28780d;
+  border-left: 0.5px solid #28780d;
+
+  @media screen and (min-width: 480px) {
+    width: 52vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 59vw;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 74.5vw;
+  }
+}

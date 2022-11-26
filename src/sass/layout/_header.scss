@@ -1,5 +1,6 @@
 .header-wrap {
   position: absolute;
+  top: 0;
   width: 100%;
 
   @media screen and (max-width: 767px) {
@@ -23,28 +24,17 @@
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 479px) {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
   @media screen and (min-width: 480px) {
-    padding-top: 24px;
-    padding-bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -55,6 +45,13 @@
 .logo {
   display: block;
   width: 115px;
+  @media screen and (min-width: 768px) {
+    width: 156px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 121px;
+  }
+
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
@@ -64,9 +61,21 @@
   color: $main-font-color;
 }
 
+.logo-header {
+  @media screen and (max-width: 767px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 .menu-btn {
   position: relative;
   display: flex;
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
@@ -87,6 +96,8 @@
   svg {
     fill: #86e543;
   }
+
+  cursor: pointer;
 }
 
 .menu-close {
@@ -96,7 +107,17 @@
 
   width: 36px;
   height: 36px;
+  padding: 0;
 
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  @media screen and (min-width: 768px) {
+    left: 0;
+  }
+
+  cursor: pointer;
   opacity: 0;
   transition: opacity;
 }
@@ -104,6 +125,7 @@
 .header-nav {
   display: flex;
   gap: 48px;
+  
   @media screen and (max-width: 1279px) {
     display: none;
   }
@@ -125,6 +147,38 @@
   &:focus {
     border-bottom: 1px solid #86e543;
   }
+}
+
+.nav-linkheader {
+  position: relative;
+  display: inline-block;
+  padding: 59px 0px;
+
+  line-height: 1;
+
+  color: $main-font-color;
+
+  border-bottom: 1px solid transparent;
+
+  @include animation(border-bottom);
+
+  &:hover,
+  &:focus {
+    .nav-linkheader__active {
+      background-color: #86e543;
+    }
+  }
+}
+
+.nav-linkheader__active {
+  position: absolute;
+  top: 87px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+
+  background-color: transparent;
+  @include animation(background-color);
 }
 
 .header-btn {
