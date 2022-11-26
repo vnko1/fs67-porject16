@@ -2,10 +2,7 @@ $header-height-mob: 104px;
 $header-height: 136px;
 
 .contacts {
-  position: relative;
-  overflow: hidden;
-
-  padding: 40px + $header-height-mob 0 48px+401px;
+  padding: 40px + $header-height-mob 0 48px;
 
   @media screen and (min-width: $tablet) {
     padding: 120px + $header-height 0 120px;
