@@ -1,3 +1,39 @@
+@mixin retina-device {
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      @content
+  }
+}
+
+@mixin font ($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin mobile {
+    @media screen and (min-width: 480px) {
+        @content;
+      }   
+}
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+      }   
+}
+@mixin desktop {
+    @media screen and (min-width: 1280px) {
+        @content;
+      }   
+}
+
+
+
+
+
+
 @mixin animation($type) {
   transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
