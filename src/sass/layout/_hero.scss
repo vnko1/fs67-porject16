@@ -1,4 +1,5 @@
 .hero {
+  overflow: hidden;
   @include mwContentMedia($desktop) {
     background-image: url(../images/main/heroBg@1x.jpg);
     @include heroRetina(heroBg, jpg);
@@ -434,11 +435,13 @@
 }
 
 .hero__title {
+  position: relative;
   margin-bottom: 25px;
   font-weight: 500;
   font-size: 32px;
   line-height: calc(38 / 32);
   text-align: center;
+  z-index: 1;
 
   @include mwContentMedia($tablet) {
     & > span {
@@ -463,6 +466,7 @@
 }
 
 .hero__link {
+  position: relative;
   width: 173px;
   height: 51px;
   @extend %centred;
@@ -473,6 +477,7 @@
   text-transform: uppercase;
   background-color: #86e543;
   color: $main-bg-color;
+  z-index: 1;
   @include contentMedia($tablet) {
     width: 306px;
     height: 70px;
