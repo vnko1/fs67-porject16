@@ -1,9 +1,25 @@
-.hero__background {
+.hero {
     width: 320px;
-    height: 601px;
-    padding-top: 284px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 100vh;
+    text-align: center;
+
+    @media screen and (min-width: 480px) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: $tablet;
+        text-align: left;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: $desktop;
+    }
+}
+
+.hero__background {
+    width: 100vw;
+    height: 100vh;
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,9 +36,8 @@
     }
 
     @media screen and (min-width: 768px) {
-        width: 768px;
-        height: 860px;
-        padding-top: 290px;
+        width: 100vw;
+        height: 100vh;
         background-size: cover;
         background-position: center;
         background-image:
@@ -37,10 +52,10 @@
         }
     }
 
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
-        height: 860px;
-        padding-top: 316px;
+    @media screen and (min-width: 1200px) {
+        width: 100vw;
+        height: 100vh;
+        width: $desktop;
         background-size: cover;
         background-position: center;
         background-image:
@@ -61,24 +76,25 @@
 .title-hero {
     @include font (600, 32px, 38px);
     color: $main-font-color;
-    margin-bottom: 25px;
+    padding-top: 284px;
+    padding-left: auto;
+    padding-right: auto;
 
     @media screen and (min-width: 768px) {
         @include font (600, 56px, 60px);
-        margin-bottom: 94px;
+        padding-top: 290px;
+        padding-left: 40px;
     }
 
     @media screen and (min-width: 1280px) {
-
         @include font (600, 64px, 75px);
-        margin-left: 102px;
-        margin-bottom: 40px;
+        padding-top: 316px;
+        padding-left: 142px;
     }
 }
 
 .title-hero__one {
     display: inline;
-    text-align: center;
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -94,32 +110,38 @@
 }
 
 .link-hero {
-    display: block;
-
-    @media screen and (max-width: 767px) {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 173px;
+    height: 51px;
     border-radius: 16px;
     border: none;
     cursor: pointer;
     background-color: $main-btn-color;
-    padding: 16px 20px;
-    
+
+    padding: 16px 0;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 102px;
     @include font (700, 16px, 19px);
     text-transform: uppercase;
     color: $btn-text-color;
-    text-align: center;
 
     @media screen and (min-width: 768px) {
-        @include font (700, 32px, 38px);
+        @include font (700, 18px, 21px);
         width: 306px;
+        height: 70px;
+        margin-top: 94px;
+        margin-left: 41px;
+        margin-bottom: 128px;
     }
 
     @media screen and (min-width: 1280px) {
-        @include font (700, 32px, 38px);
-        margin-left: 102px;
+        @include font (700, 28px, 30px);
+        margin-top: 40px;
+        margin-left: 142px;
+        margin-bottom: 209px;
     }
 }
