@@ -31,7 +31,6 @@
 }
 
 .blog-article__container {
-  padding-top: 40px;
   width: 100%;
   @include tablet {
     width: 768px;
@@ -128,7 +127,7 @@
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -160,7 +159,7 @@
 }
 
 .top-text__title {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -187,7 +186,7 @@
 }
 
 .top-text__date {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -246,7 +245,7 @@
   max-width: 320px;
   width: 100%;
   margin: 20px auto;
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -312,14 +311,14 @@
 .top-icon-container {
   position: absolute;
   left: 0;
-  top: 240px;
+  top: 200px;
   display: flex;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    top: 420px;
+    top: 380px;
   }
   @media screen and (min-width: 1280px) {
-    top: 400px;
+    top: 360px;
   }
 }
 
@@ -378,14 +377,14 @@
 .bottom-icon-container {
   position: absolute;
   left: 0;
-  top: 244px;
+  top: 204px;
   display: flex;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    top: 424px;
+    top: 384px;
   }
   @media screen and (min-width: 1280px) {
-    top: 406px;
+    top: 366px;
   }
 }
 
