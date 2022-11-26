@@ -1,5 +1,5 @@
-.section-banners {
-  padding-bottom: 48px;
+.main-section-banners {
+  padding-bottom: 47px;
 
   @include contentMedia($tablet) {
     padding: 120px 0px;
@@ -20,7 +20,7 @@
   }
 }
 
-.section-banners__img-box {
+.main-section-banners__img-box {
   position: relative;
   margin: 0 auto;
   width: 100vw;
@@ -38,7 +38,7 @@
   }
 }
 
-.section-banners__text {
+.main-section-banners__text {
   position: absolute;
   font-weight: 500;
   font-size: 24px;
@@ -67,11 +67,11 @@
   }
 }
 
-.section-banners__text-uppercase {
+.main-section-banners__text-uppercase {
   text-transform: uppercase;
 }
 
-.section-banners__text-place {
+.main-section-banners__text-place {
   background: linear-gradient(
     270deg,
     #1edde0 13.26%,
@@ -84,7 +84,7 @@
   color: transparent;
 }
 
-.section-banners__text-shop {
+.main-section-banners__text-shop {
   background: linear-gradient(
     270deg,
     #03fe8f 23.82%,
@@ -109,7 +109,7 @@
   }
 }
 
-.section-banners__text-products {
+.main-section-banners__text-products {
   background: linear-gradient(
     270deg,
     #ffffff 27.78%,
@@ -146,7 +146,7 @@
   }
 }
 
-.section-banners__banner {
+.main-section-banners__banner {
   min-width: 100%;
 }
 
@@ -171,7 +171,7 @@
   height: 16px;
   background-color: #ffffff;
   border-radius: 50%;
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .swiper-pagination-bullet-active {
@@ -180,6 +180,5 @@
   height: 16px;
   background-color: #ffffff;
   border-radius: 30px;
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
