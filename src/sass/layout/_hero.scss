@@ -1,0 +1,494 @@
+.hero {
+  overflow: hidden;
+  @include mwContentMedia($desktop) {
+    background-image: url(../images/main/heroBg@1x.jpg);
+    @include heroRetina(heroBg, jpg);
+  }
+  background-size: cover;
+  background-position: right -140px top 0;
+  background-repeat: no-repeat;
+
+  @include contentMedia($tablet) {
+    padding-bottom: 120px;
+    background-size: 150%;
+    background-position: 50%;
+  }
+}
+
+.hero__container {
+  position: relative;
+  // overflow: hidden;
+  // @include mwContentMedia(480px) {
+  //   width: 320px;
+  // }
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 180px + 104px;
+  padding-bottom: 127px;
+  // @include mwContentMedia($desktop) {
+  //   background-image: url(../images/main/heroBg@1x.jpg);
+  //   @include heroRetina(heroBg, jpg);
+  // }
+  // background-size: cover;
+  // background-position: right -140px top 0;
+  // background-repeat: no-repeat;
+  @include contentMedia($tablet) {
+    padding-top: 154px + 136px;
+    padding-bottom: 208px;
+    background-size: 150%;
+    background-position: left 55% top 70px;
+  }
+
+  @include contentMedia($desktop) {
+    padding-top: 150px + 136px;
+    padding-bottom: 209px;
+    background-size: contain;
+  }
+}
+
+.hero__icons {
+  @include mwContentMedia($tablet) {
+    display: none;
+  }
+  z-index: 0;
+  pointer-events: none;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: hard-light;
+  opacity: 0.25;
+  filter: drop-shadow(0px 3.06266px 19.1416px #5eec36);
+  @include contentMedia($desktop) {
+    filter: drop-shadow(0px 4px 25px #5eec36);
+  }
+}
+
+.icons-1 {
+  width: 669px;
+  height: 590px;
+  top: 176px;
+  right: 16px;
+  background-image: url(../icons/main/vector-8.svg);
+  transform: rotate(-180deg);
+  @include contentMedia($desktop) {
+    width: 873px;
+    height: 770px;
+    top: 72px;
+    left: 163px;
+  }
+}
+
+.icons-2 {
+  width: 42.77px;
+  height: 115px;
+  top: 384px;
+  right: 128px;
+  background-image: url(../icons/main/vector-10.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+  @include contentMedia($desktop) {
+    width: 55.86px;
+    height: 150px;
+    top: 344px;
+    right: 389px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
+}
+
+.icons-3 {
+  width: 42.77px;
+  height: 115px;
+  top: 471px;
+  left: 189px;
+  background-image: url(../icons/main/vector-15.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+  transform: rotate(132.61deg);
+
+  @include contentMedia($desktop) {
+    width: 55.86px;
+    height: 150px;
+    top: 457px;
+    left: 302px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
+}
+.icons-4 {
+  width: 153.13px;
+  height: 62.71px;
+  top: 487px;
+  left: 77px;
+  background-image: url(../icons/main/vector-11.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+  transform: rotate(46.52deg);
+
+  @include contentMedia($desktop) {
+    width: 200px;
+    height: 81.9px;
+    top: 477px;
+    left: 155px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
+}
+
+.icons-5 {
+  width: 137.82px;
+  height: 56.44px;
+  top: 125.65px + 136px;
+  right: 144px;
+  background-image: url(../icons/main/vector-16.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+  transform: matrix(0.88, 0.47, 0.47, -0.88, 0, 0);
+
+  @include contentMedia($desktop) {
+    width: 180px;
+    height: 73.71px;
+    top: 183px;
+    left: 676px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
+}
+
+.icons-6 {
+  width: 253.52px;
+  height: 254.21px;
+  right: 140px;
+  top: 470.67px;
+  background-image: url(../icons/main/vector-9.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+
+  @include contentMedia($desktop) {
+    width: 331.11px;
+    height: 332.02px;
+    top: 456px;
+    left: 600px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
+}
+
+.icons-7 {
+  width: 253.52px;
+  height: 254.21px;
+  top: 169px;
+  left: 173px;
+  background-image: url(../icons/main/vector-12.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+  transform: rotate(-164.06deg);
+
+  @include contentMedia($desktop) {
+    width: 331.11px;
+    height: 332.02px;
+    top: 62px;
+    left: 282px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
+}
+
+.icons-8 {
+  width: 150.35px;
+  height: 88.41px;
+  left: 227px;
+  bottom: 122px;
+  background-image: url(../icons/main/vector-18.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+
+  @include contentMedia($desktop) {
+    width: 196.37px;
+    height: 115.46px;
+    bottom: 175.04px;
+    left: 351.84px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
+}
+
+.icons-9 {
+  width: 237.52px;
+  height: 101.48px;
+  bottom: 232px;
+  right: 183px;
+  background-image: url(../icons/main/vector-13.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+
+  @include contentMedia($desktop) {
+    width: 310.21px;
+    height: 132.53px;
+    top: 456px;
+    left: 508px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
+}
+
+.icons-10 {
+  width: 237.52px;
+  height: 101.48px;
+  top: 284px;
+  right: 200px;
+  background-image: url(../icons/main/vector-14.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+  transform: rotate(-151.36deg);
+
+  @include contentMedia($desktop) {
+    width: 310.21px;
+    height: 132.53px;
+    top: 212px;
+    left: 520px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
+}
+
+.icons-11 {
+  width: 155.43px;
+  height: 130.93px;
+  top: 415px;
+  right: 302px;
+  background-image: url(../icons/main/vector-17.svg);
+  box-shadow: 0px 3.06266px 38.2832px rgba(0, 0, 0, 0.25);
+  filter: blur(1.91416px);
+
+  @include contentMedia($desktop) {
+    width: 203px;
+    height: 171px;
+    top: 384px;
+    left: 460px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    filter: blur(2.5px);
+  }
+}
+
+.icons-12 {
+  width: 19.14px;
+  height: 17.11px;
+  left: 96px;
+  bottom: 118px;
+  background-image: url(../icons/main/vector-23.svg);
+  background-color: rgba(123, 227, 74, 0.3);
+  @include contentMedia($desktop) {
+    width: 53px;
+    height: 47.38px;
+    right: 124px;
+    bottom: 166px;
+  }
+}
+
+.icons-13 {
+  width: 26.8px;
+  height: 27.94px;
+  left: 64px;
+  top: 189px;
+  background-image: url(../icons/main/vector-21.svg);
+  background-color: rgba(123, 227, 74, 0.3);
+  @include contentMedia($desktop) {
+    width: 30px;
+    height: 31.28px;
+    right: 308px;
+    bottom: 89px;
+  }
+}
+
+.icons-14 {
+  width: 22.97px;
+  height: 23.95px;
+  right: 66px;
+  bottom: 148px;
+  background-image: url(../icons/main/vector-22.svg);
+  background: rgba(123, 227, 74, 0.3);
+  transform: rotate(-77.1deg);
+  @include contentMedia($desktop) {
+    width: 25px;
+    height: 22.35px;
+    right: 173px;
+    bottom: 90px;
+    border: 1px solid #7be34a;
+  }
+}
+
+.icons-15 {
+  width: 42.88px;
+  height: 47.39px;
+  right: 97px;
+  bottom: 74px;
+  background-image: url(../icons/main/vector-24.svg);
+  @include contentMedia($desktop) {
+    width: 56px;
+    height: 61.89px;
+    right: 79px;
+    top: 181px;
+  }
+}
+
+.hero__mouseBg-container {
+  position: absolute;
+  width: 60px;
+  height: 99px;
+  transform: rotate(-29deg);
+  left: 32px;
+  top: 57px + 104px;
+  background-image: url(../images/main/mouseBg@1x.png);
+  @include heroRetina(mouseBg, png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  mix-blend-mode: luminosity;
+  @include contentMedia($tablet) {
+    width: 100px;
+    height: 165px;
+    top: 185px;
+    left: 430px;
+    transform: rotate(-31.92deg);
+  }
+  @include contentMedia($desktop) {
+    width: 133px;
+    height: 220px;
+    top: 175px;
+    left: 588.5px;
+    transform: rotate(-34deg);
+  }
+}
+
+.hero__headphonesBg-container {
+  width: 150px;
+  height: 186px;
+  position: absolute;
+  transform: rotate(28deg);
+  right: -6px;
+  top: 80px;
+  background-image: url(../images/main/headphonesBg@1x.png);
+  @include heroRetina(headphonesBg, png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  mix-blend-mode: luminosity;
+
+  @include contentMedia($tablet) {
+    width: 180px;
+    height: 223px;
+    top: 362px;
+    right: 20px;
+    transform: rotate(10.77deg);
+  }
+  @include contentMedia($desktop) {
+    width: 270px;
+    height: 335px;
+    right: 150px;
+    top: 290px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(18deg);
+  }
+}
+
+.hero__keyboardBg-container {
+  width: 88px;
+  height: 42px;
+  position: absolute;
+  transform: rotate(24deg);
+  right: 74px;
+  bottom: 50px;
+  background-image: url(../images/main/keyboardBg@1x.png);
+  @include heroRetina(keyboardBg, png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  mix-blend-mode: luminosity;
+  @include contentMedia($tablet) {
+    width: 143px;
+    height: 69px;
+    bottom: 128px;
+    right: 188px;
+    transform: rotate(21.68deg);
+
+    @include contentMedia($desktop) {
+      width: 230px;
+      height: 111px;
+      left: 578px;
+      bottom: 122.5px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      transform: rotate(30deg);
+    }
+  }
+}
+
+.hero__content-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  @include contentMedia($tablet) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include contentMedia($desktop) {
+    padding-left: 142px;
+    padding-right: 142px;
+  }
+}
+
+.hero__title {
+  position: relative;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: calc(38 / 32);
+  text-align: center;
+  z-index: 1;
+
+  @include mwContentMedia($tablet) {
+    & > span {
+      display: block;
+    }
+  }
+
+  @include contentMedia($tablet) {
+    max-width: 388px;
+    margin-bottom: 94px;
+    font-size: 56px;
+    line-height: calc(66 / 56);
+    text-align: left;
+  }
+
+  @include contentMedia($desktop) {
+    max-width: 525px;
+    margin-bottom: 40px;
+    font-size: 64px;
+    line-height: calc(75 / 64);
+  }
+}
+
+.hero__link {
+  position: relative;
+  width: 173px;
+  height: 51px;
+  @extend %centred;
+  @extend %flex-centred;
+  font-weight: 700;
+  line-height: calc(19 / 16);
+  border-radius: 16px;
+  text-transform: uppercase;
+  background-color: #86e543;
+  color: $main-bg-color;
+  z-index: 1;
+  @include contentMedia($tablet) {
+    width: 306px;
+    height: 70px;
+    margin: 0;
+    font-size: 32px;
+    line-height: calc(38 / 32);
+  }
+  @include animation(box-shadow);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+}
