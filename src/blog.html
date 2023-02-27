@@ -11,7 +11,14 @@
   <body>
     <!-- в мейн підключаються паршалы секцій, хедер та футер перед мейном та після -->
     <include src="./partials/header.html"></include>
-    <main><include src="./partials/blog-page.html"></include></main>
+    <main>
+      <include src="./partials/blog-page.html"
+        ><p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          atque dolore sint adipisci minus qui ipsum ab sapiente quasi? Itaque.
+        </p></include
+      >
+    </main>
     <include src="./partials/footer.html"></include>
     <script src="./js/mobile-menu.js"></script>
   </body>
